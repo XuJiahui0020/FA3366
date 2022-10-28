@@ -1,0 +1,1850 @@
+2022-10-08 22:42:40,003 P27101 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "/Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "5a9ba7ed"
+}
+2022-10-08 22:42:42,634 P27101 INFO Load from /Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar
+2022-10-08 22:42:42,634 P27101 INFO {
+    "label_file": "/Users/jiahui/Dataset/HDFS_1/anomaly_label.csv",
+    "log_file": "/Users/jiahui/logparser/new_HDFS.log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2022-10-08 22:42:42,634 P27101 INFO # train sessions 460048 (0.03 anomalies)
+2022-10-08 22:42:42,634 P27101 INFO # test sessions 115012 (0.03 anomalies)
+2022-10-08 22:42:42,636 P27101 INFO Cannot load cached feature extractor.
+2022-10-08 22:42:42,967 P27101 INFO 50 tempaltes are found.
+2022-10-08 22:42:42,967 P27101 INFO Using semantics.
+2022-10-08 22:42:42,967 P27101 INFO Building vocab.
+2022-10-08 22:42:42,976 P27101 INFO Building vocab done.
+2022-10-08 22:42:42,995 P27101 INFO Transforming train data.
+2022-10-08 22:42:51,406 P27101 INFO 4836417 sliding windows generated.
+2022-10-08 22:42:51,411 P27101 INFO Extracting semantic features.
+2022-10-08 22:43:43,650 P27101 INFO Finish feature extraction (train).
+2022-10-08 22:43:43,651 P27101 INFO Transforming test data.
+2022-10-08 22:43:43,823 P27101 INFO 0 new templates show while testing.
+2022-10-08 22:43:44,974 P27101 INFO 1206665 sliding windows generated.
+2022-10-08 22:43:44,976 P27101 INFO Extracting semantic features.
+2022-10-08 22:44:02,008 P27101 INFO Finish feature extraction (test).
+2022-10-08 22:44:05,526 P27101 INFO Start training on 4724 batches with cpu.
+2022-10-08 22:53:18,810 P27101 INFO Epoch 1/100, training loss: 0.85779 [553.28s]
+2022-10-08 22:53:18,816 P27101 INFO Evaluating test data.
+2022-10-08 22:57:18,116 P31018 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "/Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "5a9ba7ed"
+}
+2022-10-08 22:57:20,084 P31018 INFO Load from /Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar
+2022-10-08 22:57:20,085 P31018 INFO {
+    "label_file": "/Users/jiahui/Dataset/HDFS_1/anomaly_label.csv",
+    "log_file": "/Users/jiahui/logparser/new_HDFS.log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2022-10-08 22:57:20,085 P31018 INFO # train sessions 460048 (0.03 anomalies)
+2022-10-08 22:57:20,085 P31018 INFO # test sessions 115012 (0.03 anomalies)
+2022-10-08 22:57:20,086 P31018 INFO Cannot load cached feature extractor.
+2022-10-08 22:57:20,335 P31018 INFO 50 tempaltes are found.
+2022-10-08 22:57:20,335 P31018 INFO Using semantics.
+2022-10-08 22:57:20,335 P31018 INFO Building vocab.
+2022-10-08 22:57:20,338 P31018 INFO Building vocab done.
+2022-10-08 22:57:20,351 P31018 INFO Transforming train data.
+2022-10-08 22:57:28,091 P31018 INFO 4836417 sliding windows generated.
+2022-10-08 22:57:28,094 P31018 INFO Extracting semantic features.
+2022-10-08 22:58:18,997 P31018 INFO Finish feature extraction (train).
+2022-10-08 22:58:18,998 P31018 INFO Transforming test data.
+2022-10-08 22:58:19,164 P31018 INFO 0 new templates show while testing.
+2022-10-08 22:58:20,322 P31018 INFO 1206665 sliding windows generated.
+2022-10-08 22:58:20,324 P31018 INFO Extracting semantic features.
+2022-10-08 22:58:37,724 P31018 INFO Finish feature extraction (test).
+2022-10-08 22:58:41,243 P31018 INFO Start training on 4724 batches with cpu.
+2022-10-08 23:07:59,204 P31018 INFO Epoch 1/100, training loss: 0.88667 [557.96s]
+2022-10-08 23:07:59,209 P31018 INFO Evaluating test data.
+2022-10-08 23:11:41,861 P34526 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "/Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "5a9ba7ed"
+}
+2022-10-08 23:11:43,945 P34526 INFO Load from /Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar
+2022-10-08 23:11:43,945 P34526 INFO {
+    "label_file": "/Users/jiahui/Dataset/HDFS_1/anomaly_label.csv",
+    "log_file": "/Users/jiahui/logparser/new_HDFS.log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2022-10-08 23:11:43,945 P34526 INFO # train sessions 460048 (0.03 anomalies)
+2022-10-08 23:11:43,945 P34526 INFO # test sessions 115012 (0.03 anomalies)
+2022-10-08 23:11:43,947 P34526 INFO Cannot load cached feature extractor.
+2022-10-08 23:11:44,200 P34526 INFO 50 tempaltes are found.
+2022-10-08 23:11:44,200 P34526 INFO Using semantics.
+2022-10-08 23:11:44,200 P34526 INFO Building vocab.
+2022-10-08 23:11:44,202 P34526 INFO Building vocab done.
+2022-10-08 23:11:44,215 P34526 INFO Transforming train data.
+2022-10-08 23:11:52,064 P34526 INFO 4836417 sliding windows generated.
+2022-10-08 23:11:52,067 P34526 INFO Extracting semantic features.
+2022-10-08 23:12:42,629 P34526 INFO Finish feature extraction (train).
+2022-10-08 23:12:42,630 P34526 INFO Transforming test data.
+2022-10-08 23:12:42,811 P34526 INFO 0 new templates show while testing.
+2022-10-08 23:12:43,988 P34526 INFO 1206665 sliding windows generated.
+2022-10-08 23:12:43,990 P34526 INFO Extracting semantic features.
+2022-10-08 23:13:07,540 P34526 INFO Finish feature extraction (test).
+2022-10-08 23:13:11,296 P34526 INFO Start training on 4724 batches with cpu.
+2022-10-08 23:23:07,384 P34526 INFO Epoch 1/100, training loss: 0.94745 [596.08s]
+2022-10-08 23:23:07,392 P34526 INFO Evaluating test data.
+2022-10-09 22:17:02,791 P50881 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "/Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "5a9ba7ed"
+}
+2022-10-09 22:17:04,485 P50881 INFO Load from /Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar
+2022-10-09 22:17:04,485 P50881 INFO {
+    "label_file": "/Users/jiahui/Dataset/HDFS_1/anomaly_label.csv",
+    "log_file": "/Users/jiahui/logparser/new_HDFS.log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2022-10-09 22:17:04,485 P50881 INFO # train sessions 460048 (0.03 anomalies)
+2022-10-09 22:17:04,485 P50881 INFO # test sessions 115012 (0.03 anomalies)
+2022-10-09 22:17:04,486 P50881 INFO Cannot load cached feature extractor.
+2022-10-09 22:17:04,722 P50881 INFO 50 tempaltes are found.
+2022-10-09 22:17:04,722 P50881 INFO Using semantics.
+2022-10-09 22:17:04,722 P50881 INFO Building vocab.
+2022-10-09 22:17:04,722 P50881 INFO Building vocab done.
+2022-10-09 22:17:04,735 P50881 INFO Transforming train data.
+2022-10-09 22:18:07,402 P51014 INFO {
+    "model_name": "Transformer",
+    "hidden_size": 128,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "nhead": 2,
+    "dataset": "HDFS",
+    "data_dir": "/Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "semantics",
+    "use_attention": false,
+    "label_type": "next_log",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "topk": 10,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "hash_id": "5a9ba7ed"
+}
+2022-10-09 22:18:09,061 P51014 INFO Load from /Users/jiahui/deep-loglizer/data/processed/HDFS_Drain_result/hdfs_1.0_tar
+2022-10-09 22:18:09,062 P51014 INFO {
+    "label_file": "/Users/jiahui/Dataset/HDFS_1/anomaly_label.csv",
+    "log_file": "/Users/jiahui/logparser/new_HDFS.log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 1.0
+}
+2022-10-09 22:18:09,062 P51014 INFO # train sessions 460048 (0.03 anomalies)
+2022-10-09 22:18:09,062 P51014 INFO # test sessions 115012 (0.03 anomalies)
+2022-10-09 22:18:09,063 P51014 INFO Cannot load cached feature extractor.
+2022-10-09 22:18:09,299 P51014 INFO 50 tempaltes are found.
+2022-10-09 22:18:09,299 P51014 INFO Using semantics.
+2022-10-09 22:18:09,299 P51014 INFO Building vocab.
+2022-10-09 22:18:09,300 P51014 INFO Building vocab done.
+2022-10-09 22:18:09,311 P51014 INFO Transforming train data.
+2022-10-09 22:18:15,458 P51014 INFO 4836417 sliding windows generated.
+2022-10-09 22:18:15,460 P51014 INFO Extracting semantic features.
+2022-10-09 22:18:30,920 P51014 INFO Finish feature extraction (train).
+2022-10-09 22:18:30,922 P51014 INFO Transforming test data.
+2022-10-09 22:18:30,978 P51014 INFO 0 new templates show while testing.
+2022-10-09 22:18:32,859 P51014 INFO 1206665 sliding windows generated.
+2022-10-09 22:18:32,860 P51014 INFO Extracting semantic features.
+2022-10-09 22:18:37,150 P51014 INFO Finish feature extraction (test).
+2022-10-09 22:18:40,023 P51014 INFO Start training on 4724 batches with cpu.
+2022-10-09 22:26:47,010 P51014 INFO Epoch 1/100, training loss: 1.60721 [486.98s]
+2022-10-09 22:26:47,011 P51014 INFO Evaluating test data.
+2022-10-09 22:27:18,194 P51014 INFO Finish inference. [31.18s]
+2022-10-09 22:27:22,367 P51014 INFO Calculating acc sum.
+2022-10-09 22:27:22,492 P51014 INFO Finish generating store_df.
+2022-10-09 22:27:22,653 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-09 22:27:22,706 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 22:27:22,766 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-09 22:27:22,834 P51014 INFO {'f1': '0.115', 'rc': '1.000', 'pc': '0.061', 'top4-acc': '0.970'}
+2022-10-09 22:27:22,893 P51014 INFO {'f1': '0.125', 'rc': '1.000', 'pc': '0.067', 'top5-acc': '0.970'}
+2022-10-09 22:27:22,953 P51014 INFO {'f1': '0.143', 'rc': '1.000', 'pc': '0.077', 'top6-acc': '0.970'}
+2022-10-09 22:27:23,006 P51014 INFO {'f1': '0.292', 'rc': '0.995', 'pc': '0.171', 'top7-acc': '0.970'}
+2022-10-09 22:27:23,053 P51014 INFO {'f1': '0.928', 'rc': '0.994', 'pc': '0.871', 'top8-acc': '0.970'}
+2022-10-09 22:27:23,098 P51014 INFO {'f1': '0.890', 'rc': '0.914', 'pc': '0.867', 'top9-acc': '0.970'}
+2022-10-09 22:27:23,143 P51014 INFO {'f1': '0.890', 'rc': '0.914', 'pc': '0.867', 'top10-acc': '0.970'}
+2022-10-09 22:27:23,143 P51014 INFO Finish counting [3.84s]
+2022-10-09 22:27:23,473 P51014 INFO Saving model to ./experiment_records/5a9ba7ed/model.ckpt
+2022-10-09 22:35:15,381 P51014 INFO Epoch 2/100, training loss: 1.06013 [471.90s]
+2022-10-09 22:35:15,383 P51014 INFO Evaluating test data.
+2022-10-09 22:35:45,645 P51014 INFO Finish inference. [30.26s]
+2022-10-09 22:35:49,834 P51014 INFO Calculating acc sum.
+2022-10-09 22:35:49,947 P51014 INFO Finish generating store_df.
+2022-10-09 22:35:50,104 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-09 22:35:50,167 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 22:35:50,221 P51014 INFO {'f1': '0.069', 'rc': '0.999', 'pc': '0.036', 'top3-acc': '0.970'}
+2022-10-09 22:35:50,277 P51014 INFO {'f1': '0.141', 'rc': '0.798', 'pc': '0.078', 'top4-acc': '0.970'}
+2022-10-09 22:35:50,329 P51014 INFO {'f1': '0.192', 'rc': '0.774', 'pc': '0.110', 'top5-acc': '0.970'}
+2022-10-09 22:35:50,378 P51014 INFO {'f1': '0.250', 'rc': '0.554', 'pc': '0.161', 'top6-acc': '0.970'}
+2022-10-09 22:35:50,423 P51014 INFO {'f1': '0.593', 'rc': '0.537', 'pc': '0.662', 'top7-acc': '0.970'}
+2022-10-09 22:35:50,468 P51014 INFO {'f1': '0.467', 'rc': '0.388', 'pc': '0.587', 'top8-acc': '0.970'}
+2022-10-09 22:35:50,512 P51014 INFO {'f1': '0.463', 'rc': '0.380', 'pc': '0.592', 'top9-acc': '0.970'}
+2022-10-09 22:35:50,558 P51014 INFO {'f1': '0.463', 'rc': '0.379', 'pc': '0.595', 'top10-acc': '0.970'}
+2022-10-09 22:35:50,558 P51014 INFO Finish counting [3.84s]
+2022-10-09 22:44:01,095 P51014 INFO Epoch 3/100, training loss: 0.71293 [490.25s]
+2022-10-09 22:44:01,098 P51014 INFO Evaluating test data.
+2022-10-09 22:44:32,201 P51014 INFO Finish inference. [31.10s]
+2022-10-09 22:44:36,442 P51014 INFO Calculating acc sum.
+2022-10-09 22:44:36,564 P51014 INFO Finish generating store_df.
+2022-10-09 22:44:36,737 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-09 22:44:36,793 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 22:44:36,848 P51014 INFO {'f1': '0.070', 'rc': '0.999', 'pc': '0.036', 'top3-acc': '0.970'}
+2022-10-09 22:44:36,906 P51014 INFO {'f1': '0.129', 'rc': '0.717', 'pc': '0.071', 'top4-acc': '0.970'}
+2022-10-09 22:44:36,959 P51014 INFO {'f1': '0.166', 'rc': '0.652', 'pc': '0.095', 'top5-acc': '0.970'}
+2022-10-09 22:44:37,009 P51014 INFO {'f1': '0.238', 'rc': '0.625', 'pc': '0.147', 'top6-acc': '0.970'}
+2022-10-09 22:44:37,055 P51014 INFO {'f1': '0.651', 'rc': '0.581', 'pc': '0.741', 'top7-acc': '0.970'}
+2022-10-09 22:44:37,100 P51014 INFO {'f1': '0.563', 'rc': '0.465', 'pc': '0.714', 'top8-acc': '0.970'}
+2022-10-09 22:44:37,145 P51014 INFO {'f1': '0.521', 'rc': '0.379', 'pc': '0.834', 'top9-acc': '0.970'}
+2022-10-09 22:44:37,190 P51014 INFO {'f1': '0.422', 'rc': '0.284', 'pc': '0.821', 'top10-acc': '0.970'}
+2022-10-09 22:44:37,190 P51014 INFO Finish counting [3.87s]
+2022-10-09 22:52:33,422 P51014 INFO Epoch 4/100, training loss: 0.78370 [475.95s]
+2022-10-09 22:52:33,423 P51014 INFO Evaluating test data.
+2022-10-09 22:53:03,474 P51014 INFO Finish inference. [30.05s]
+2022-10-09 22:53:07,665 P51014 INFO Calculating acc sum.
+2022-10-09 22:53:07,777 P51014 INFO Finish generating store_df.
+2022-10-09 22:53:07,933 P51014 INFO {'f1': '0.047', 'rc': '0.806', 'pc': '0.024', 'top1-acc': '0.970'}
+2022-10-09 22:53:07,983 P51014 INFO {'f1': '0.037', 'rc': '0.624', 'pc': '0.019', 'top2-acc': '0.970'}
+2022-10-09 22:53:08,044 P51014 INFO {'f1': '0.061', 'rc': '0.462', 'pc': '0.033', 'top3-acc': '0.970'}
+2022-10-09 22:53:08,101 P51014 INFO {'f1': '0.059', 'rc': '0.445', 'pc': '0.032', 'top4-acc': '0.970'}
+2022-10-09 22:53:08,156 P51014 INFO {'f1': '0.078', 'rc': '0.418', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-09 22:53:08,209 P51014 INFO {'f1': '0.121', 'rc': '0.368', 'pc': '0.072', 'top6-acc': '0.970'}
+2022-10-09 22:53:08,253 P51014 INFO {'f1': '0.448', 'rc': '0.334', 'pc': '0.680', 'top7-acc': '0.970'}
+2022-10-09 22:53:08,297 P51014 INFO {'f1': '0.433', 'rc': '0.318', 'pc': '0.680', 'top8-acc': '0.970'}
+2022-10-09 22:53:08,343 P51014 INFO {'f1': '0.297', 'rc': '0.189', 'pc': '0.686', 'top9-acc': '0.970'}
+2022-10-09 22:53:08,391 P51014 INFO {'f1': '0.220', 'rc': '0.134', 'pc': '0.607', 'top10-acc': '0.970'}
+2022-10-09 22:53:08,391 P51014 INFO Finish counting [3.85s]
+2022-10-09 23:00:57,175 P51014 INFO Epoch 5/100, training loss: 0.80906 [468.49s]
+2022-10-09 23:00:57,177 P51014 INFO Evaluating test data.
+2022-10-09 23:01:27,074 P51014 INFO Finish inference. [29.90s]
+2022-10-09 23:01:31,295 P51014 INFO Calculating acc sum.
+2022-10-09 23:01:31,409 P51014 INFO Finish generating store_df.
+2022-10-09 23:01:31,557 P51014 INFO {'f1': '0.054', 'rc': '0.806', 'pc': '0.028', 'top1-acc': '0.970'}
+2022-10-09 23:01:31,615 P51014 INFO {'f1': '0.048', 'rc': '0.704', 'pc': '0.025', 'top2-acc': '0.970'}
+2022-10-09 23:01:31,675 P51014 INFO {'f1': '0.067', 'rc': '0.513', 'pc': '0.036', 'top3-acc': '0.970'}
+2022-10-09 23:01:31,731 P51014 INFO {'f1': '0.078', 'rc': '0.422', 'pc': '0.043', 'top4-acc': '0.970'}
+2022-10-09 23:01:31,784 P51014 INFO {'f1': '0.103', 'rc': '0.380', 'pc': '0.060', 'top5-acc': '0.970'}
+2022-10-09 23:01:31,834 P51014 INFO {'f1': '0.153', 'rc': '0.314', 'pc': '0.101', 'top6-acc': '0.970'}
+2022-10-09 23:01:31,878 P51014 INFO {'f1': '0.390', 'rc': '0.286', 'pc': '0.617', 'top7-acc': '0.970'}
+2022-10-09 23:01:31,924 P51014 INFO {'f1': '0.383', 'rc': '0.270', 'pc': '0.657', 'top8-acc': '0.970'}
+2022-10-09 23:01:31,967 P51014 INFO {'f1': '0.298', 'rc': '0.186', 'pc': '0.746', 'top9-acc': '0.970'}
+2022-10-09 23:01:32,011 P51014 INFO {'f1': '0.267', 'rc': '0.161', 'pc': '0.769', 'top10-acc': '0.970'}
+2022-10-09 23:01:32,011 P51014 INFO Finish counting [3.85s]
+2022-10-09 23:09:17,256 P51014 INFO Epoch 6/100, training loss: 0.77688 [464.93s]
+2022-10-09 23:09:17,257 P51014 INFO Evaluating test data.
+2022-10-09 23:09:46,849 P51014 INFO Finish inference. [29.59s]
+2022-10-09 23:09:51,041 P51014 INFO Calculating acc sum.
+2022-10-09 23:09:51,152 P51014 INFO Finish generating store_df.
+2022-10-09 23:09:51,294 P51014 INFO {'f1': '0.064', 'rc': '1.000', 'pc': '0.033', 'top1-acc': '0.970'}
+2022-10-09 23:09:51,355 P51014 INFO {'f1': '0.091', 'rc': '1.000', 'pc': '0.048', 'top2-acc': '0.970'}
+2022-10-09 23:09:51,416 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top3-acc': '0.970'}
+2022-10-09 23:09:51,478 P51014 INFO {'f1': '0.144', 'rc': '0.803', 'pc': '0.079', 'top4-acc': '0.970'}
+2022-10-09 23:09:51,532 P51014 INFO {'f1': '0.177', 'rc': '0.673', 'pc': '0.102', 'top5-acc': '0.970'}
+2022-10-09 23:09:51,581 P51014 INFO {'f1': '0.233', 'rc': '0.577', 'pc': '0.146', 'top6-acc': '0.970'}
+2022-10-09 23:09:51,628 P51014 INFO {'f1': '0.633', 'rc': '0.553', 'pc': '0.740', 'top7-acc': '0.970'}
+2022-10-09 23:09:51,674 P51014 INFO {'f1': '0.605', 'rc': '0.477', 'pc': '0.825', 'top8-acc': '0.970'}
+2022-10-09 23:09:51,719 P51014 INFO {'f1': '0.541', 'rc': '0.405', 'pc': '0.813', 'top9-acc': '0.970'}
+2022-10-09 23:09:51,763 P51014 INFO {'f1': '0.453', 'rc': '0.311', 'pc': '0.832', 'top10-acc': '0.970'}
+2022-10-09 23:09:51,763 P51014 INFO Finish counting [3.84s]
+2022-10-09 23:17:41,532 P51014 INFO Epoch 7/100, training loss: 0.99986 [469.44s]
+2022-10-09 23:17:41,534 P51014 INFO Evaluating test data.
+2022-10-09 23:18:21,429 P51014 INFO Finish inference. [39.90s]
+2022-10-09 23:18:25,621 P51014 INFO Calculating acc sum.
+2022-10-09 23:18:25,733 P51014 INFO Finish generating store_df.
+2022-10-09 23:18:25,892 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-09 23:18:25,951 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 23:18:26,011 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-09 23:18:26,070 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-09 23:18:26,124 P51014 INFO {'f1': '0.176', 'rc': '0.997', 'pc': '0.096', 'top5-acc': '0.970'}
+2022-10-09 23:18:26,177 P51014 INFO {'f1': '0.225', 'rc': '0.986', 'pc': '0.127', 'top6-acc': '0.970'}
+2022-10-09 23:18:26,227 P51014 INFO {'f1': '0.361', 'rc': '0.952', 'pc': '0.222', 'top7-acc': '0.970'}
+2022-10-09 23:18:26,272 P51014 INFO {'f1': '0.876', 'rc': '0.884', 'pc': '0.869', 'top8-acc': '0.970'}
+2022-10-09 23:18:26,316 P51014 INFO {'f1': '0.745', 'rc': '0.626', 'pc': '0.920', 'top9-acc': '0.970'}
+2022-10-09 23:18:26,360 P51014 INFO {'f1': '0.625', 'rc': '0.479', 'pc': '0.900', 'top10-acc': '0.970'}
+2022-10-09 23:18:26,360 P51014 INFO Finish counting [3.86s]
+2022-10-09 23:26:36,060 P51014 INFO Epoch 8/100, training loss: 1.25694 [489.38s]
+2022-10-09 23:26:36,063 P51014 INFO Evaluating test data.
+2022-10-09 23:27:06,242 P51014 INFO Finish inference. [30.18s]
+2022-10-09 23:27:10,417 P51014 INFO Calculating acc sum.
+2022-10-09 23:27:10,532 P51014 INFO Finish generating store_df.
+2022-10-09 23:27:10,690 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-09 23:27:10,743 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 23:27:10,801 P51014 INFO {'f1': '0.098', 'rc': '0.854', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-09 23:27:10,862 P51014 INFO {'f1': '0.108', 'rc': '0.842', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-09 23:27:10,918 P51014 INFO {'f1': '0.143', 'rc': '0.797', 'pc': '0.079', 'top5-acc': '0.970'}
+2022-10-09 23:27:10,974 P51014 INFO {'f1': '0.195', 'rc': '0.774', 'pc': '0.112', 'top6-acc': '0.970'}
+2022-10-09 23:27:11,027 P51014 INFO {'f1': '0.333', 'rc': '0.748', 'pc': '0.214', 'top7-acc': '0.970'}
+2022-10-09 23:27:11,077 P51014 INFO {'f1': '0.777', 'rc': '0.726', 'pc': '0.835', 'top8-acc': '0.970'}
+2022-10-09 23:27:11,122 P51014 INFO {'f1': '0.541', 'rc': '0.393', 'pc': '0.870', 'top9-acc': '0.970'}
+2022-10-09 23:27:11,166 P51014 INFO {'f1': '0.426', 'rc': '0.283', 'pc': '0.859', 'top10-acc': '0.970'}
+2022-10-09 23:27:11,166 P51014 INFO Finish counting [3.85s]
+2022-10-09 23:35:04,441 P51014 INFO Epoch 9/100, training loss: 1.23743 [472.98s]
+2022-10-09 23:35:04,442 P51014 INFO Evaluating test data.
+2022-10-09 23:35:34,128 P51014 INFO Finish inference. [29.69s]
+2022-10-09 23:35:38,323 P51014 INFO Calculating acc sum.
+2022-10-09 23:35:38,435 P51014 INFO Finish generating store_df.
+2022-10-09 23:35:38,599 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-09 23:35:38,658 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 23:35:38,718 P51014 INFO {'f1': '0.103', 'rc': '0.904', 'pc': '0.055', 'top3-acc': '0.970'}
+2022-10-09 23:35:38,776 P51014 INFO {'f1': '0.083', 'rc': '0.705', 'pc': '0.044', 'top4-acc': '0.970'}
+2022-10-09 23:35:38,831 P51014 INFO {'f1': '0.116', 'rc': '0.639', 'pc': '0.064', 'top5-acc': '0.970'}
+2022-10-09 23:35:38,882 P51014 INFO {'f1': '0.146', 'rc': '0.565', 'pc': '0.084', 'top6-acc': '0.970'}
+2022-10-09 23:35:38,935 P51014 INFO {'f1': '0.252', 'rc': '0.540', 'pc': '0.165', 'top7-acc': '0.970'}
+2022-10-09 23:35:38,980 P51014 INFO {'f1': '0.537', 'rc': '0.418', 'pc': '0.751', 'top8-acc': '0.970'}
+2022-10-09 23:35:39,024 P51014 INFO {'f1': '0.531', 'rc': '0.409', 'pc': '0.756', 'top9-acc': '0.970'}
+2022-10-09 23:35:39,069 P51014 INFO {'f1': '0.385', 'rc': '0.264', 'pc': '0.709', 'top10-acc': '0.970'}
+2022-10-09 23:35:39,069 P51014 INFO Finish counting [3.86s]
+2022-10-09 23:55:38,734 P51014 INFO Epoch 10/100, training loss: 1.24202 [1199.35s]
+2022-10-09 23:55:38,736 P51014 INFO Evaluating test data.
+2022-10-09 23:56:08,895 P51014 INFO Finish inference. [30.16s]
+2022-10-09 23:56:13,127 P51014 INFO Calculating acc sum.
+2022-10-09 23:56:13,244 P51014 INFO Finish generating store_df.
+2022-10-09 23:56:13,393 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-09 23:56:13,446 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-09 23:56:13,499 P51014 INFO {'f1': '0.054', 'rc': '0.806', 'pc': '0.028', 'top3-acc': '0.970'}
+2022-10-09 23:56:13,553 P51014 INFO {'f1': '0.056', 'rc': '0.806', 'pc': '0.029', 'top4-acc': '0.970'}
+2022-10-09 23:56:13,608 P51014 INFO {'f1': '0.120', 'rc': '0.661', 'pc': '0.066', 'top5-acc': '0.970'}
+2022-10-09 23:56:13,662 P51014 INFO {'f1': '0.131', 'rc': '0.547', 'pc': '0.074', 'top6-acc': '0.970'}
+2022-10-09 23:56:13,711 P51014 INFO {'f1': '0.206', 'rc': '0.498', 'pc': '0.130', 'top7-acc': '0.970'}
+2022-10-09 23:56:13,755 P51014 INFO {'f1': '0.492', 'rc': '0.372', 'pc': '0.725', 'top8-acc': '0.970'}
+2022-10-09 23:56:13,799 P51014 INFO {'f1': '0.348', 'rc': '0.240', 'pc': '0.630', 'top9-acc': '0.970'}
+2022-10-09 23:56:13,844 P51014 INFO {'f1': '0.348', 'rc': '0.234', 'pc': '0.677', 'top10-acc': '0.970'}
+2022-10-09 23:56:13,844 P51014 INFO Finish counting [3.84s]
+2022-10-10 00:04:03,214 P51014 INFO Epoch 11/100, training loss: 1.35496 [469.05s]
+2022-10-10 00:04:03,215 P51014 INFO Evaluating test data.
+2022-10-10 00:04:33,226 P51014 INFO Finish inference. [30.01s]
+2022-10-10 00:04:37,398 P51014 INFO Calculating acc sum.
+2022-10-10 00:04:37,507 P51014 INFO Finish generating store_df.
+2022-10-10 00:04:37,650 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 00:04:37,702 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 00:04:37,754 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 00:04:37,808 P51014 INFO {'f1': '0.069', 'rc': '0.999', 'pc': '0.036', 'top4-acc': '0.970'}
+2022-10-10 00:04:37,870 P51014 INFO {'f1': '0.150', 'rc': '0.848', 'pc': '0.082', 'top5-acc': '0.970'}
+2022-10-10 00:04:37,924 P51014 INFO {'f1': '0.201', 'rc': '0.783', 'pc': '0.115', 'top6-acc': '0.970'}
+2022-10-10 00:04:37,973 P51014 INFO {'f1': '0.327', 'rc': '0.738', 'pc': '0.210', 'top7-acc': '0.970'}
+2022-10-10 00:04:38,018 P51014 INFO {'f1': '0.772', 'rc': '0.728', 'pc': '0.823', 'top8-acc': '0.970'}
+2022-10-10 00:04:38,062 P51014 INFO {'f1': '0.627', 'rc': '0.519', 'pc': '0.791', 'top9-acc': '0.970'}
+2022-10-10 00:04:38,106 P51014 INFO {'f1': '0.448', 'rc': '0.308', 'pc': '0.820', 'top10-acc': '0.970'}
+2022-10-10 00:04:38,106 P51014 INFO Finish counting [3.82s]
+2022-10-10 00:12:56,244 P51014 INFO Epoch 12/100, training loss: 1.22385 [497.82s]
+2022-10-10 00:12:56,246 P51014 INFO Evaluating test data.
+2022-10-10 00:13:27,246 P51014 INFO Finish inference. [31.00s]
+2022-10-10 00:13:31,483 P51014 INFO Calculating acc sum.
+2022-10-10 00:13:31,604 P51014 INFO Finish generating store_df.
+2022-10-10 00:13:31,764 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 00:13:31,816 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 00:13:31,868 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 00:13:31,921 P51014 INFO {'f1': '0.070', 'rc': '0.999', 'pc': '0.036', 'top4-acc': '0.970'}
+2022-10-10 00:13:31,978 P51014 INFO {'f1': '0.143', 'rc': '0.800', 'pc': '0.078', 'top5-acc': '0.970'}
+2022-10-10 00:13:32,029 P51014 INFO {'f1': '0.184', 'rc': '0.789', 'pc': '0.104', 'top6-acc': '0.970'}
+2022-10-10 00:13:32,079 P51014 INFO {'f1': '0.298', 'rc': '0.763', 'pc': '0.185', 'top7-acc': '0.970'}
+2022-10-10 00:13:32,124 P51014 INFO {'f1': '0.788', 'rc': '0.736', 'pc': '0.847', 'top8-acc': '0.970'}
+2022-10-10 00:13:32,168 P51014 INFO {'f1': '0.767', 'rc': '0.698', 'pc': '0.850', 'top9-acc': '0.970'}
+2022-10-10 00:13:32,213 P51014 INFO {'f1': '0.713', 'rc': '0.578', 'pc': '0.931', 'top10-acc': '0.970'}
+2022-10-10 00:13:32,213 P51014 INFO Finish counting [3.86s]
+2022-10-10 00:21:29,006 P51014 INFO Epoch 13/100, training loss: 1.24588 [476.49s]
+2022-10-10 00:21:29,008 P51014 INFO Evaluating test data.
+2022-10-10 00:21:58,845 P51014 INFO Finish inference. [29.84s]
+2022-10-10 00:22:03,086 P51014 INFO Calculating acc sum.
+2022-10-10 00:22:03,201 P51014 INFO Finish generating store_df.
+2022-10-10 00:22:03,364 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 00:22:03,421 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 00:22:03,473 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 00:22:03,532 P51014 INFO {'f1': '0.115', 'rc': '0.897', 'pc': '0.061', 'top4-acc': '0.970'}
+2022-10-10 00:22:03,588 P51014 INFO {'f1': '0.155', 'rc': '0.870', 'pc': '0.085', 'top5-acc': '0.970'}
+2022-10-10 00:22:03,641 P51014 INFO {'f1': '0.223', 'rc': '0.870', 'pc': '0.128', 'top6-acc': '0.970'}
+2022-10-10 00:22:03,690 P51014 INFO {'f1': '0.376', 'rc': '0.869', 'pc': '0.240', 'top7-acc': '0.970'}
+2022-10-10 00:22:03,735 P51014 INFO {'f1': '0.853', 'rc': '0.853', 'pc': '0.852', 'top8-acc': '0.970'}
+2022-10-10 00:22:03,780 P51014 INFO {'f1': '0.729', 'rc': '0.659', 'pc': '0.817', 'top9-acc': '0.970'}
+2022-10-10 00:22:03,825 P51014 INFO {'f1': '0.604', 'rc': '0.464', 'pc': '0.862', 'top10-acc': '0.970'}
+2022-10-10 00:22:03,825 P51014 INFO Finish counting [3.89s]
+2022-10-10 00:29:53,632 P51014 INFO Epoch 14/100, training loss: 1.42213 [469.50s]
+2022-10-10 00:29:53,634 P51014 INFO Evaluating test data.
+2022-10-10 00:30:23,448 P51014 INFO Finish inference. [29.81s]
+2022-10-10 00:30:27,663 P51014 INFO Calculating acc sum.
+2022-10-10 00:30:27,779 P51014 INFO Finish generating store_df.
+2022-10-10 00:30:27,926 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 00:30:27,980 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 00:30:28,041 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 00:30:28,100 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 00:30:28,155 P51014 INFO {'f1': '0.175', 'rc': '0.997', 'pc': '0.096', 'top5-acc': '0.970'}
+2022-10-10 00:30:28,207 P51014 INFO {'f1': '0.238', 'rc': '0.973', 'pc': '0.136', 'top6-acc': '0.970'}
+2022-10-10 00:30:28,256 P51014 INFO {'f1': '0.402', 'rc': '0.948', 'pc': '0.255', 'top7-acc': '0.970'}
+2022-10-10 00:30:28,300 P51014 INFO {'f1': '0.882', 'rc': '0.895', 'pc': '0.870', 'top8-acc': '0.970'}
+2022-10-10 00:30:28,345 P51014 INFO {'f1': '0.805', 'rc': '0.764', 'pc': '0.851', 'top9-acc': '0.970'}
+2022-10-10 00:30:28,389 P51014 INFO {'f1': '0.745', 'rc': '0.668', 'pc': '0.844', 'top10-acc': '0.970'}
+2022-10-10 00:30:28,389 P51014 INFO Finish counting [3.87s]
+2022-10-10 00:38:26,977 P51014 INFO Epoch 15/100, training loss: 1.47320 [478.29s]
+2022-10-10 00:38:26,979 P51014 INFO Evaluating test data.
+2022-10-10 00:38:56,808 P51014 INFO Finish inference. [29.83s]
+2022-10-10 00:39:01,025 P51014 INFO Calculating acc sum.
+2022-10-10 00:39:01,135 P51014 INFO Finish generating store_df.
+2022-10-10 00:39:01,301 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 00:39:01,353 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 00:39:01,413 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 00:39:01,472 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 00:39:01,528 P51014 INFO {'f1': '0.174', 'rc': '0.997', 'pc': '0.095', 'top5-acc': '0.970'}
+2022-10-10 00:39:01,583 P51014 INFO {'f1': '0.236', 'rc': '0.945', 'pc': '0.135', 'top6-acc': '0.970'}
+2022-10-10 00:39:01,633 P51014 INFO {'f1': '0.314', 'rc': '0.703', 'pc': '0.202', 'top7-acc': '0.970'}
+2022-10-10 00:39:01,679 P51014 INFO {'f1': '0.701', 'rc': '0.611', 'pc': '0.821', 'top8-acc': '0.970'}
+2022-10-10 00:39:01,724 P51014 INFO {'f1': '0.615', 'rc': '0.502', 'pc': '0.793', 'top9-acc': '0.970'}
+2022-10-10 00:39:01,770 P51014 INFO {'f1': '0.562', 'rc': '0.408', 'pc': '0.900', 'top10-acc': '0.970'}
+2022-10-10 00:39:01,770 P51014 INFO Finish counting [3.90s]
+2022-10-10 00:47:12,717 P51014 INFO Epoch 16/100, training loss: 1.38680 [490.66s]
+2022-10-10 00:47:12,719 P51014 INFO Evaluating test data.
+2022-10-10 00:47:43,437 P51014 INFO Finish inference. [30.72s]
+2022-10-10 00:47:47,692 P51014 INFO Calculating acc sum.
+2022-10-10 00:47:47,810 P51014 INFO Finish generating store_df.
+2022-10-10 00:47:47,957 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 00:47:48,013 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 00:47:48,074 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 00:47:48,134 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 00:47:48,189 P51014 INFO {'f1': '0.176', 'rc': '0.997', 'pc': '0.096', 'top5-acc': '0.970'}
+2022-10-10 00:47:48,244 P51014 INFO {'f1': '0.246', 'rc': '0.973', 'pc': '0.141', 'top6-acc': '0.970'}
+2022-10-10 00:47:48,292 P51014 INFO {'f1': '0.337', 'rc': '0.757', 'pc': '0.217', 'top7-acc': '0.970'}
+2022-10-10 00:47:48,337 P51014 INFO {'f1': '0.746', 'rc': '0.675', 'pc': '0.833', 'top8-acc': '0.970'}
+2022-10-10 00:47:48,382 P51014 INFO {'f1': '0.662', 'rc': '0.557', 'pc': '0.813', 'top9-acc': '0.970'}
+2022-10-10 00:47:48,428 P51014 INFO {'f1': '0.623', 'rc': '0.482', 'pc': '0.879', 'top10-acc': '0.970'}
+2022-10-10 00:47:48,428 P51014 INFO Finish counting [3.90s]
+2022-10-10 00:56:01,601 P51014 INFO Epoch 17/100, training loss: 1.41442 [492.83s]
+2022-10-10 00:56:01,602 P51014 INFO Evaluating test data.
+2022-10-10 00:56:31,408 P51014 INFO Finish inference. [29.81s]
+2022-10-10 00:56:35,626 P51014 INFO Calculating acc sum.
+2022-10-10 00:56:35,742 P51014 INFO Finish generating store_df.
+2022-10-10 00:56:35,896 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 00:56:35,942 P51014 INFO {'f1': '0.053', 'rc': '0.898', 'pc': '0.027', 'top2-acc': '0.970'}
+2022-10-10 00:56:35,987 P51014 INFO {'f1': '0.041', 'rc': '0.704', 'pc': '0.021', 'top3-acc': '0.970'}
+2022-10-10 00:56:36,035 P51014 INFO {'f1': '0.043', 'rc': '0.704', 'pc': '0.022', 'top4-acc': '0.970'}
+2022-10-10 00:56:36,089 P51014 INFO {'f1': '0.113', 'rc': '0.622', 'pc': '0.062', 'top5-acc': '0.970'}
+2022-10-10 00:56:36,144 P51014 INFO {'f1': '0.116', 'rc': '0.618', 'pc': '0.064', 'top6-acc': '0.970'}
+2022-10-10 00:56:36,195 P51014 INFO {'f1': '0.177', 'rc': '0.551', 'pc': '0.105', 'top7-acc': '0.970'}
+2022-10-10 00:56:36,239 P51014 INFO {'f1': '0.631', 'rc': '0.523', 'pc': '0.796', 'top8-acc': '0.970'}
+2022-10-10 00:56:36,283 P51014 INFO {'f1': '0.616', 'rc': '0.505', 'pc': '0.790', 'top9-acc': '0.970'}
+2022-10-10 00:56:36,328 P51014 INFO {'f1': '0.568', 'rc': '0.450', 'pc': '0.770', 'top10-acc': '0.970'}
+2022-10-10 00:56:36,328 P51014 INFO Finish counting [3.84s]
+2022-10-10 01:04:38,098 P51014 INFO Epoch 18/100, training loss: 1.48069 [481.47s]
+2022-10-10 01:04:38,100 P51014 INFO Evaluating test data.
+2022-10-10 01:05:07,933 P51014 INFO Finish inference. [29.83s]
+2022-10-10 01:05:12,151 P51014 INFO Calculating acc sum.
+2022-10-10 01:05:12,270 P51014 INFO Finish generating store_df.
+2022-10-10 01:05:12,435 P51014 INFO {'f1': '0.053', 'rc': '0.898', 'pc': '0.027', 'top1-acc': '0.970'}
+2022-10-10 01:05:12,497 P51014 INFO {'f1': '0.048', 'rc': '0.704', 'pc': '0.025', 'top2-acc': '0.970'}
+2022-10-10 01:05:12,558 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top3-acc': '0.970'}
+2022-10-10 01:05:12,616 P51014 INFO {'f1': '0.091', 'rc': '0.704', 'pc': '0.049', 'top4-acc': '0.970'}
+2022-10-10 01:05:12,672 P51014 INFO {'f1': '0.111', 'rc': '0.608', 'pc': '0.061', 'top5-acc': '0.970'}
+2022-10-10 01:05:12,724 P51014 INFO {'f1': '0.151', 'rc': '0.586', 'pc': '0.087', 'top6-acc': '0.970'}
+2022-10-10 01:05:12,775 P51014 INFO {'f1': '0.256', 'rc': '0.555', 'pc': '0.166', 'top7-acc': '0.970'}
+2022-10-10 01:05:12,822 P51014 INFO {'f1': '0.603', 'rc': '0.505', 'pc': '0.748', 'top8-acc': '0.970'}
+2022-10-10 01:05:12,874 P51014 INFO {'f1': '0.602', 'rc': '0.504', 'pc': '0.747', 'top9-acc': '0.970'}
+2022-10-10 01:05:12,920 P51014 INFO {'f1': '0.616', 'rc': '0.504', 'pc': '0.790', 'top10-acc': '0.970'}
+2022-10-10 01:05:12,920 P51014 INFO Finish counting [3.90s]
+2022-10-10 01:13:09,747 P51014 INFO Epoch 19/100, training loss: 1.39921 [476.53s]
+2022-10-10 01:13:09,748 P51014 INFO Evaluating test data.
+2022-10-10 01:13:39,744 P51014 INFO Finish inference. [29.99s]
+2022-10-10 01:13:43,973 P51014 INFO Calculating acc sum.
+2022-10-10 01:13:44,087 P51014 INFO Finish generating store_df.
+2022-10-10 01:13:44,255 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 01:13:44,302 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top2-acc': '0.970'}
+2022-10-10 01:13:44,363 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 01:13:44,421 P51014 INFO {'f1': '0.115', 'rc': '0.898', 'pc': '0.062', 'top4-acc': '0.970'}
+2022-10-10 01:13:44,480 P51014 INFO {'f1': '0.116', 'rc': '0.898', 'pc': '0.062', 'top5-acc': '0.970'}
+2022-10-10 01:13:44,538 P51014 INFO {'f1': '0.103', 'rc': '0.701', 'pc': '0.056', 'top6-acc': '0.970'}
+2022-10-10 01:13:44,590 P51014 INFO {'f1': '0.212', 'rc': '0.673', 'pc': '0.126', 'top7-acc': '0.970'}
+2022-10-10 01:13:44,637 P51014 INFO {'f1': '0.669', 'rc': '0.570', 'pc': '0.810', 'top8-acc': '0.970'}
+2022-10-10 01:13:44,682 P51014 INFO {'f1': '0.670', 'rc': '0.570', 'pc': '0.811', 'top9-acc': '0.970'}
+2022-10-10 01:13:44,727 P51014 INFO {'f1': '0.669', 'rc': '0.569', 'pc': '0.810', 'top10-acc': '0.970'}
+2022-10-10 01:13:44,727 P51014 INFO Finish counting [3.90s]
+2022-10-10 01:21:48,944 P51014 INFO Epoch 20/100, training loss: 1.43281 [483.93s]
+2022-10-10 01:21:48,946 P51014 INFO Evaluating test data.
+2022-10-10 01:22:29,116 P51014 INFO Finish inference. [40.17s]
+2022-10-10 01:22:33,303 P51014 INFO Calculating acc sum.
+2022-10-10 01:22:33,417 P51014 INFO Finish generating store_df.
+2022-10-10 01:22:33,573 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 01:22:33,631 P51014 INFO {'f1': '0.047', 'rc': '0.806', 'pc': '0.024', 'top2-acc': '0.970'}
+2022-10-10 01:22:33,691 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top3-acc': '0.970'}
+2022-10-10 01:22:33,749 P51014 INFO {'f1': '0.091', 'rc': '0.704', 'pc': '0.049', 'top4-acc': '0.970'}
+2022-10-10 01:22:33,805 P51014 INFO {'f1': '0.111', 'rc': '0.608', 'pc': '0.061', 'top5-acc': '0.970'}
+2022-10-10 01:22:33,857 P51014 INFO {'f1': '0.156', 'rc': '0.608', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 01:22:33,906 P51014 INFO {'f1': '0.259', 'rc': '0.560', 'pc': '0.169', 'top7-acc': '0.970'}
+2022-10-10 01:22:33,951 P51014 INFO {'f1': '0.650', 'rc': '0.546', 'pc': '0.802', 'top8-acc': '0.970'}
+2022-10-10 01:22:34,001 P51014 INFO {'f1': '0.478', 'rc': '0.356', 'pc': '0.727', 'top9-acc': '0.970'}
+2022-10-10 01:22:34,048 P51014 INFO {'f1': '0.458', 'rc': '0.337', 'pc': '0.716', 'top10-acc': '0.970'}
+2022-10-10 01:22:34,048 P51014 INFO Finish counting [3.87s]
+2022-10-10 01:30:41,956 P51014 INFO Epoch 21/100, training loss: 1.36629 [487.62s]
+2022-10-10 01:30:41,957 P51014 INFO Evaluating test data.
+2022-10-10 01:31:13,530 P51014 INFO Finish inference. [31.57s]
+2022-10-10 01:31:17,756 P51014 INFO Calculating acc sum.
+2022-10-10 01:31:17,871 P51014 INFO Finish generating store_df.
+2022-10-10 01:31:18,039 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 01:31:18,091 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 01:31:18,152 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 01:31:18,211 P51014 INFO {'f1': '0.127', 'rc': '0.999', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 01:31:18,265 P51014 INFO {'f1': '0.176', 'rc': '0.997', 'pc': '0.096', 'top5-acc': '0.970'}
+2022-10-10 01:31:18,321 P51014 INFO {'f1': '0.234', 'rc': '0.995', 'pc': '0.132', 'top6-acc': '0.970'}
+2022-10-10 01:31:18,374 P51014 INFO {'f1': '0.295', 'rc': '0.994', 'pc': '0.173', 'top7-acc': '0.970'}
+2022-10-10 01:31:18,423 P51014 INFO {'f1': '0.900', 'rc': '0.939', 'pc': '0.864', 'top8-acc': '0.970'}
+2022-10-10 01:31:18,468 P51014 INFO {'f1': '0.766', 'rc': '0.703', 'pc': '0.841', 'top9-acc': '0.970'}
+2022-10-10 01:31:18,512 P51014 INFO {'f1': '0.758', 'rc': '0.692', 'pc': '0.839', 'top10-acc': '0.970'}
+2022-10-10 01:31:18,512 P51014 INFO Finish counting [3.90s]
+2022-10-10 01:39:30,197 P51014 INFO Epoch 22/100, training loss: 1.48303 [491.36s]
+2022-10-10 01:39:30,199 P51014 INFO Evaluating test data.
+2022-10-10 01:40:00,632 P51014 INFO Finish inference. [30.43s]
+2022-10-10 01:40:04,836 P51014 INFO Calculating acc sum.
+2022-10-10 01:40:04,949 P51014 INFO Finish generating store_df.
+2022-10-10 01:40:05,094 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 01:40:05,146 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 01:40:05,205 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 01:40:05,262 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 01:40:05,318 P51014 INFO {'f1': '0.176', 'rc': '0.998', 'pc': '0.096', 'top5-acc': '0.970'}
+2022-10-10 01:40:05,372 P51014 INFO {'f1': '0.180', 'rc': '0.994', 'pc': '0.099', 'top6-acc': '0.970'}
+2022-10-10 01:40:05,424 P51014 INFO {'f1': '0.289', 'rc': '0.966', 'pc': '0.170', 'top7-acc': '0.970'}
+2022-10-10 01:40:05,469 P51014 INFO {'f1': '0.908', 'rc': '0.943', 'pc': '0.875', 'top8-acc': '0.970'}
+2022-10-10 01:40:05,514 P51014 INFO {'f1': '0.867', 'rc': '0.863', 'pc': '0.871', 'top9-acc': '0.970'}
+2022-10-10 01:40:05,559 P51014 INFO {'f1': '0.745', 'rc': '0.669', 'pc': '0.840', 'top10-acc': '0.970'}
+2022-10-10 01:40:05,559 P51014 INFO Finish counting [3.86s]
+2022-10-10 01:48:08,216 P51014 INFO Epoch 23/100, training loss: 1.53969 [482.33s]
+2022-10-10 01:48:08,218 P51014 INFO Evaluating test data.
+2022-10-10 01:48:38,542 P51014 INFO Finish inference. [30.32s]
+2022-10-10 01:48:42,710 P51014 INFO Calculating acc sum.
+2022-10-10 01:48:42,824 P51014 INFO Finish generating store_df.
+2022-10-10 01:48:42,968 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 01:48:43,020 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 01:48:43,080 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.049', 'top3-acc': '0.970'}
+2022-10-10 01:48:43,139 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.050', 'top4-acc': '0.970'}
+2022-10-10 01:48:43,198 P51014 INFO {'f1': '0.102', 'rc': '0.804', 'pc': '0.054', 'top5-acc': '0.970'}
+2022-10-10 01:48:43,258 P51014 INFO {'f1': '0.117', 'rc': '0.802', 'pc': '0.063', 'top6-acc': '0.970'}
+2022-10-10 01:48:43,312 P51014 INFO {'f1': '0.232', 'rc': '0.749', 'pc': '0.137', 'top7-acc': '0.970'}
+2022-10-10 01:48:43,357 P51014 INFO {'f1': '0.710', 'rc': '0.624', 'pc': '0.823', 'top8-acc': '0.970'}
+2022-10-10 01:48:43,401 P51014 INFO {'f1': '0.710', 'rc': '0.624', 'pc': '0.823', 'top9-acc': '0.970'}
+2022-10-10 01:48:43,446 P51014 INFO {'f1': '0.651', 'rc': '0.543', 'pc': '0.812', 'top10-acc': '0.970'}
+2022-10-10 01:48:43,446 P51014 INFO Finish counting [3.86s]
+2022-10-10 01:56:45,435 P51014 INFO Epoch 24/100, training loss: 1.54276 [481.69s]
+2022-10-10 01:56:45,436 P51014 INFO Evaluating test data.
+2022-10-10 01:57:15,914 P51014 INFO Finish inference. [30.48s]
+2022-10-10 01:57:20,072 P51014 INFO Calculating acc sum.
+2022-10-10 01:57:20,186 P51014 INFO Finish generating store_df.
+2022-10-10 01:57:20,347 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 01:57:20,406 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 01:57:20,465 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 01:57:20,524 P51014 INFO {'f1': '0.104', 'rc': '0.806', 'pc': '0.056', 'top4-acc': '0.970'}
+2022-10-10 01:57:20,582 P51014 INFO {'f1': '0.105', 'rc': '0.806', 'pc': '0.056', 'top5-acc': '0.970'}
+2022-10-10 01:57:20,637 P51014 INFO {'f1': '0.148', 'rc': '0.804', 'pc': '0.081', 'top6-acc': '0.970'}
+2022-10-10 01:57:20,688 P51014 INFO {'f1': '0.246', 'rc': '0.803', 'pc': '0.145', 'top7-acc': '0.970'}
+2022-10-10 01:57:20,733 P51014 INFO {'f1': '0.758', 'rc': '0.701', 'pc': '0.826', 'top8-acc': '0.970'}
+2022-10-10 01:57:20,777 P51014 INFO {'f1': '0.724', 'rc': '0.639', 'pc': '0.835', 'top9-acc': '0.970'}
+2022-10-10 01:57:20,821 P51014 INFO {'f1': '0.683', 'rc': '0.584', 'pc': '0.823', 'top10-acc': '0.970'}
+2022-10-10 01:57:20,821 P51014 INFO Finish counting [3.84s]
+2022-10-10 02:05:39,895 P51014 INFO Epoch 25/100, training loss: 1.49055 [498.77s]
+2022-10-10 02:05:39,897 P51014 INFO Evaluating test data.
+2022-10-10 02:06:11,668 P51014 INFO Finish inference. [31.77s]
+2022-10-10 02:06:15,782 P51014 INFO Calculating acc sum.
+2022-10-10 02:06:15,906 P51014 INFO Finish generating store_df.
+2022-10-10 02:06:16,064 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 02:06:16,108 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top2-acc': '0.970'}
+2022-10-10 02:06:16,166 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 02:06:16,223 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 02:06:16,281 P51014 INFO {'f1': '0.128', 'rc': '1.000', 'pc': '0.069', 'top5-acc': '0.970'}
+2022-10-10 02:06:16,337 P51014 INFO {'f1': '0.144', 'rc': '1.000', 'pc': '0.077', 'top6-acc': '0.970'}
+2022-10-10 02:06:16,389 P51014 INFO {'f1': '0.297', 'rc': '0.997', 'pc': '0.174', 'top7-acc': '0.970'}
+2022-10-10 02:06:16,433 P51014 INFO {'f1': '0.930', 'rc': '0.997', 'pc': '0.871', 'top8-acc': '0.970'}
+2022-10-10 02:06:16,477 P51014 INFO {'f1': '0.554', 'rc': '0.434', 'pc': '0.765', 'top9-acc': '0.970'}
+2022-10-10 02:06:16,520 P51014 INFO {'f1': '0.554', 'rc': '0.434', 'pc': '0.765', 'top10-acc': '0.970'}
+2022-10-10 02:06:16,520 P51014 INFO Finish counting [3.77s]
+2022-10-10 02:06:16,842 P51014 INFO Saving model to ./experiment_records/5a9ba7ed/model.ckpt
+2022-10-10 02:14:41,915 P51014 INFO Epoch 26/100, training loss: 1.52332 [505.07s]
+2022-10-10 02:14:41,917 P51014 INFO Evaluating test data.
+2022-10-10 02:15:12,552 P51014 INFO Finish inference. [30.64s]
+2022-10-10 02:15:16,780 P51014 INFO Calculating acc sum.
+2022-10-10 02:15:16,896 P51014 INFO Finish generating store_df.
+2022-10-10 02:15:17,057 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 02:15:17,121 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 02:15:17,182 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top3-acc': '0.970'}
+2022-10-10 02:15:17,240 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top4-acc': '0.970'}
+2022-10-10 02:15:17,297 P51014 INFO {'f1': '0.092', 'rc': '0.704', 'pc': '0.049', 'top5-acc': '0.970'}
+2022-10-10 02:15:17,356 P51014 INFO {'f1': '0.103', 'rc': '0.700', 'pc': '0.055', 'top6-acc': '0.970'}
+2022-10-10 02:15:17,408 P51014 INFO {'f1': '0.207', 'rc': '0.661', 'pc': '0.123', 'top7-acc': '0.970'}
+2022-10-10 02:15:17,452 P51014 INFO {'f1': '0.720', 'rc': '0.641', 'pc': '0.820', 'top8-acc': '0.970'}
+2022-10-10 02:15:17,496 P51014 INFO {'f1': '0.633', 'rc': '0.525', 'pc': '0.797', 'top9-acc': '0.970'}
+2022-10-10 02:15:17,540 P51014 INFO {'f1': '0.617', 'rc': '0.505', 'pc': '0.792', 'top10-acc': '0.970'}
+2022-10-10 02:15:17,540 P51014 INFO Finish counting [3.90s]
+2022-10-10 02:23:33,153 P51014 INFO Epoch 27/100, training loss: 1.44239 [495.28s]
+2022-10-10 02:23:33,155 P51014 INFO Evaluating test data.
+2022-10-10 02:24:03,764 P51014 INFO Finish inference. [30.61s]
+2022-10-10 02:24:07,948 P51014 INFO Calculating acc sum.
+2022-10-10 02:24:08,062 P51014 INFO Finish generating store_df.
+2022-10-10 02:24:08,213 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 02:24:08,264 P51014 INFO {'f1': '0.054', 'rc': '0.806', 'pc': '0.028', 'top2-acc': '0.970'}
+2022-10-10 02:24:08,323 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.049', 'top3-acc': '0.970'}
+2022-10-10 02:24:08,381 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.050', 'top4-acc': '0.970'}
+2022-10-10 02:24:08,440 P51014 INFO {'f1': '0.089', 'rc': '0.702', 'pc': '0.048', 'top5-acc': '0.970'}
+2022-10-10 02:24:08,497 P51014 INFO {'f1': '0.103', 'rc': '0.700', 'pc': '0.055', 'top6-acc': '0.970'}
+2022-10-10 02:24:08,548 P51014 INFO {'f1': '0.185', 'rc': '0.581', 'pc': '0.110', 'top7-acc': '0.970'}
+2022-10-10 02:24:08,592 P51014 INFO {'f1': '0.662', 'rc': '0.561', 'pc': '0.806', 'top8-acc': '0.970'}
+2022-10-10 02:24:08,636 P51014 INFO {'f1': '0.661', 'rc': '0.561', 'pc': '0.806', 'top9-acc': '0.970'}
+2022-10-10 02:24:08,680 P51014 INFO {'f1': '0.617', 'rc': '0.506', 'pc': '0.791', 'top10-acc': '0.970'}
+2022-10-10 02:24:08,680 P51014 INFO Finish counting [3.83s]
+2022-10-10 02:32:14,184 P51014 INFO Epoch 28/100, training loss: 1.48043 [485.18s]
+2022-10-10 02:32:14,185 P51014 INFO Evaluating test data.
+2022-10-10 02:32:44,523 P51014 INFO Finish inference. [30.34s]
+2022-10-10 02:32:48,711 P51014 INFO Calculating acc sum.
+2022-10-10 02:32:48,822 P51014 INFO Finish generating store_df.
+2022-10-10 02:32:48,970 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 02:32:49,022 P51014 INFO {'f1': '0.054', 'rc': '0.806', 'pc': '0.028', 'top2-acc': '0.970'}
+2022-10-10 02:32:49,082 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top3-acc': '0.970'}
+2022-10-10 02:32:49,138 P51014 INFO {'f1': '0.091', 'rc': '0.704', 'pc': '0.049', 'top4-acc': '0.970'}
+2022-10-10 02:32:49,195 P51014 INFO {'f1': '0.092', 'rc': '0.704', 'pc': '0.049', 'top5-acc': '0.970'}
+2022-10-10 02:32:49,249 P51014 INFO {'f1': '0.125', 'rc': '0.671', 'pc': '0.069', 'top6-acc': '0.970'}
+2022-10-10 02:32:49,300 P51014 INFO {'f1': '0.195', 'rc': '0.618', 'pc': '0.116', 'top7-acc': '0.970'}
+2022-10-10 02:32:49,344 P51014 INFO {'f1': '0.617', 'rc': '0.505', 'pc': '0.792', 'top8-acc': '0.970'}
+2022-10-10 02:32:49,389 P51014 INFO {'f1': '0.617', 'rc': '0.505', 'pc': '0.792', 'top9-acc': '0.970'}
+2022-10-10 02:32:49,433 P51014 INFO {'f1': '0.617', 'rc': '0.505', 'pc': '0.793', 'top10-acc': '0.970'}
+2022-10-10 02:32:49,433 P51014 INFO Finish counting [3.85s]
+2022-10-10 02:40:59,091 P51014 INFO Epoch 29/100, training loss: 1.17895 [489.36s]
+2022-10-10 02:40:59,093 P51014 INFO Evaluating test data.
+2022-10-10 02:41:39,328 P51014 INFO Finish inference. [40.23s]
+2022-10-10 02:41:43,527 P51014 INFO Calculating acc sum.
+2022-10-10 02:41:43,639 P51014 INFO Finish generating store_df.
+2022-10-10 02:41:43,789 P51014 INFO {'f1': '0.060', 'rc': '0.898', 'pc': '0.031', 'top1-acc': '0.970'}
+2022-10-10 02:41:43,848 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top2-acc': '0.970'}
+2022-10-10 02:41:43,906 P51014 INFO {'f1': '0.071', 'rc': '0.542', 'pc': '0.038', 'top3-acc': '0.970'}
+2022-10-10 02:41:43,965 P51014 INFO {'f1': '0.072', 'rc': '0.542', 'pc': '0.038', 'top4-acc': '0.970'}
+2022-10-10 02:41:44,029 P51014 INFO {'f1': '0.079', 'rc': '0.533', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-10 02:41:44,089 P51014 INFO {'f1': '0.091', 'rc': '0.518', 'pc': '0.050', 'top6-acc': '0.970'}
+2022-10-10 02:41:44,134 P51014 INFO {'f1': '0.541', 'rc': '0.437', 'pc': '0.709', 'top7-acc': '0.970'}
+2022-10-10 02:41:44,178 P51014 INFO {'f1': '0.556', 'rc': '0.437', 'pc': '0.766', 'top8-acc': '0.970'}
+2022-10-10 02:41:44,222 P51014 INFO {'f1': '0.479', 'rc': '0.357', 'pc': '0.728', 'top9-acc': '0.970'}
+2022-10-10 02:41:44,266 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.686', 'top10-acc': '0.970'}
+2022-10-10 02:41:44,266 P51014 INFO Finish counting [3.87s]
+2022-10-10 02:50:11,151 P51014 INFO Epoch 30/100, training loss: 1.02915 [506.57s]
+2022-10-10 02:50:11,152 P51014 INFO Evaluating test data.
+2022-10-10 02:50:42,401 P51014 INFO Finish inference. [31.25s]
+2022-10-10 02:50:46,571 P51014 INFO Calculating acc sum.
+2022-10-10 02:50:46,684 P51014 INFO Finish generating store_df.
+2022-10-10 02:50:46,847 P51014 INFO {'f1': '0.060', 'rc': '0.898', 'pc': '0.031', 'top1-acc': '0.970'}
+2022-10-10 02:50:46,910 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top2-acc': '0.970'}
+2022-10-10 02:50:46,968 P51014 INFO {'f1': '0.091', 'rc': '0.704', 'pc': '0.049', 'top3-acc': '0.970'}
+2022-10-10 02:50:47,027 P51014 INFO {'f1': '0.092', 'rc': '0.704', 'pc': '0.049', 'top4-acc': '0.970'}
+2022-10-10 02:50:47,084 P51014 INFO {'f1': '0.103', 'rc': '0.700', 'pc': '0.055', 'top5-acc': '0.970'}
+2022-10-10 02:50:47,139 P51014 INFO {'f1': '0.092', 'rc': '0.518', 'pc': '0.050', 'top6-acc': '0.970'}
+2022-10-10 02:50:47,183 P51014 INFO {'f1': '0.473', 'rc': '0.357', 'pc': '0.703', 'top7-acc': '0.970'}
+2022-10-10 02:50:47,227 P51014 INFO {'f1': '0.473', 'rc': '0.357', 'pc': '0.704', 'top8-acc': '0.970'}
+2022-10-10 02:50:47,271 P51014 INFO {'f1': '0.476', 'rc': '0.357', 'pc': '0.713', 'top9-acc': '0.970'}
+2022-10-10 02:50:47,318 P51014 INFO {'f1': '0.403', 'rc': '0.288', 'pc': '0.669', 'top10-acc': '0.970'}
+2022-10-10 02:50:47,318 P51014 INFO Finish counting [3.85s]
+2022-10-10 02:59:02,796 P51014 INFO Epoch 31/100, training loss: 1.06883 [495.17s]
+2022-10-10 02:59:02,798 P51014 INFO Evaluating test data.
+2022-10-10 02:59:33,414 P51014 INFO Finish inference. [30.62s]
+2022-10-10 02:59:37,624 P51014 INFO Calculating acc sum.
+2022-10-10 02:59:37,742 P51014 INFO Finish generating store_df.
+2022-10-10 02:59:37,907 P51014 INFO {'f1': '0.060', 'rc': '0.898', 'pc': '0.031', 'top1-acc': '0.970'}
+2022-10-10 02:59:37,971 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top2-acc': '0.970'}
+2022-10-10 02:59:38,031 P51014 INFO {'f1': '0.071', 'rc': '0.542', 'pc': '0.038', 'top3-acc': '0.970'}
+2022-10-10 02:59:38,090 P51014 INFO {'f1': '0.072', 'rc': '0.542', 'pc': '0.038', 'top4-acc': '0.970'}
+2022-10-10 02:59:38,146 P51014 INFO {'f1': '0.079', 'rc': '0.533', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-10 02:59:38,201 P51014 INFO {'f1': '0.077', 'rc': '0.434', 'pc': '0.042', 'top6-acc': '0.970'}
+2022-10-10 02:59:38,257 P51014 INFO {'f1': '0.078', 'rc': '0.434', 'pc': '0.043', 'top7-acc': '0.970'}
+2022-10-10 02:59:38,300 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 02:59:38,344 P51014 INFO {'f1': '0.408', 'rc': '0.288', 'pc': '0.696', 'top9-acc': '0.970'}
+2022-10-10 02:59:38,387 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 02:59:38,388 P51014 INFO Finish counting [3.89s]
+2022-10-10 03:07:52,267 P51014 INFO Epoch 32/100, training loss: 1.10411 [493.56s]
+2022-10-10 03:07:52,268 P51014 INFO Evaluating test data.
+2022-10-10 03:08:23,476 P51014 INFO Finish inference. [31.21s]
+2022-10-10 03:08:27,681 P51014 INFO Calculating acc sum.
+2022-10-10 03:08:27,792 P51014 INFO Finish generating store_df.
+2022-10-10 03:08:27,951 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 03:08:28,009 P51014 INFO {'f1': '0.082', 'rc': '0.704', 'pc': '0.043', 'top2-acc': '0.970'}
+2022-10-10 03:08:28,067 P51014 INFO {'f1': '0.071', 'rc': '0.542', 'pc': '0.038', 'top3-acc': '0.970'}
+2022-10-10 03:08:28,125 P51014 INFO {'f1': '0.072', 'rc': '0.542', 'pc': '0.038', 'top4-acc': '0.970'}
+2022-10-10 03:08:28,182 P51014 INFO {'f1': '0.068', 'rc': '0.453', 'pc': '0.037', 'top5-acc': '0.970'}
+2022-10-10 03:08:28,232 P51014 INFO {'f1': '0.127', 'rc': '0.389', 'pc': '0.076', 'top6-acc': '0.970'}
+2022-10-10 03:08:28,276 P51014 INFO {'f1': '0.472', 'rc': '0.357', 'pc': '0.698', 'top7-acc': '0.970'}
+2022-10-10 03:08:28,320 P51014 INFO {'f1': '0.411', 'rc': '0.294', 'pc': '0.683', 'top8-acc': '0.970'}
+2022-10-10 03:08:28,363 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.691', 'top9-acc': '0.970'}
+2022-10-10 03:08:28,407 P51014 INFO {'f1': '0.406', 'rc': '0.287', 'pc': '0.691', 'top10-acc': '0.970'}
+2022-10-10 03:08:28,407 P51014 INFO Finish counting [3.87s]
+2022-10-10 03:16:44,851 P51014 INFO Epoch 33/100, training loss: 1.12749 [496.15s]
+2022-10-10 03:16:44,852 P51014 INFO Evaluating test data.
+2022-10-10 03:17:15,845 P51014 INFO Finish inference. [30.99s]
+2022-10-10 03:17:20,042 P51014 INFO Calculating acc sum.
+2022-10-10 03:17:20,156 P51014 INFO Finish generating store_df.
+2022-10-10 03:17:20,301 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 03:17:20,360 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 03:17:20,419 P51014 INFO {'f1': '0.084', 'rc': '0.644', 'pc': '0.045', 'top3-acc': '0.970'}
+2022-10-10 03:17:20,477 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 03:17:20,534 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 03:17:20,587 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 03:17:20,631 P51014 INFO {'f1': '0.636', 'rc': '0.537', 'pc': '0.781', 'top7-acc': '0.970'}
+2022-10-10 03:17:20,675 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 03:17:20,719 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top9-acc': '0.970'}
+2022-10-10 03:17:20,763 P51014 INFO {'f1': '0.404', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 03:17:20,763 P51014 INFO Finish counting [3.84s]
+2022-10-10 03:26:04,338 P51014 INFO Epoch 34/100, training loss: 1.13810 [523.25s]
+2022-10-10 03:26:04,339 P51014 INFO Evaluating test data.
+2022-10-10 03:26:36,367 P51014 INFO Finish inference. [32.03s]
+2022-10-10 03:26:40,581 P51014 INFO Calculating acc sum.
+2022-10-10 03:26:40,707 P51014 INFO Finish generating store_df.
+2022-10-10 03:26:40,870 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 03:26:40,922 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 03:26:40,979 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 03:26:41,036 P51014 INFO {'f1': '0.096', 'rc': '0.736', 'pc': '0.051', 'top4-acc': '0.970'}
+2022-10-10 03:26:41,092 P51014 INFO {'f1': '0.106', 'rc': '0.722', 'pc': '0.057', 'top5-acc': '0.970'}
+2022-10-10 03:26:41,143 P51014 INFO {'f1': '0.136', 'rc': '0.420', 'pc': '0.081', 'top6-acc': '0.970'}
+2022-10-10 03:26:41,187 P51014 INFO {'f1': '0.479', 'rc': '0.369', 'pc': '0.684', 'top7-acc': '0.970'}
+2022-10-10 03:26:41,231 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 03:26:41,275 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.686', 'top9-acc': '0.970'}
+2022-10-10 03:26:41,319 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 03:26:41,319 P51014 INFO Finish counting [3.85s]
+2022-10-10 03:35:01,169 P51014 INFO Epoch 35/100, training loss: 1.09925 [499.56s]
+2022-10-10 03:35:01,170 P51014 INFO Evaluating test data.
+2022-10-10 03:35:31,533 P51014 INFO Finish inference. [30.36s]
+2022-10-10 03:35:35,730 P51014 INFO Calculating acc sum.
+2022-10-10 03:35:35,842 P51014 INFO Finish generating store_df.
+2022-10-10 03:35:35,993 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 03:35:36,058 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 03:35:36,117 P51014 INFO {'f1': '0.115', 'rc': '1.000', 'pc': '0.061', 'top3-acc': '0.970'}
+2022-10-10 03:35:36,175 P51014 INFO {'f1': '0.089', 'rc': '0.702', 'pc': '0.048', 'top4-acc': '0.970'}
+2022-10-10 03:35:36,232 P51014 INFO {'f1': '0.102', 'rc': '0.700', 'pc': '0.055', 'top5-acc': '0.970'}
+2022-10-10 03:35:36,283 P51014 INFO {'f1': '0.196', 'rc': '0.619', 'pc': '0.116', 'top6-acc': '0.970'}
+2022-10-10 03:35:36,328 P51014 INFO {'f1': '0.673', 'rc': '0.587', 'pc': '0.789', 'top7-acc': '0.970'}
+2022-10-10 03:35:36,372 P51014 INFO {'f1': '0.682', 'rc': '0.586', 'pc': '0.816', 'top8-acc': '0.970'}
+2022-10-10 03:35:36,415 P51014 INFO {'f1': '0.504', 'rc': '0.379', 'pc': '0.752', 'top9-acc': '0.970'}
+2022-10-10 03:35:36,459 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.696', 'top10-acc': '0.970'}
+2022-10-10 03:35:36,459 P51014 INFO Finish counting [3.85s]
+2022-10-10 03:43:32,791 P51014 INFO Epoch 36/100, training loss: 1.04871 [476.03s]
+2022-10-10 03:43:32,792 P51014 INFO Evaluating test data.
+2022-10-10 03:44:02,932 P51014 INFO Finish inference. [30.14s]
+2022-10-10 03:44:07,131 P51014 INFO Calculating acc sum.
+2022-10-10 03:44:07,245 P51014 INFO Finish generating store_df.
+2022-10-10 03:44:07,408 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 03:44:07,466 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top2-acc': '0.970'}
+2022-10-10 03:44:07,519 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top3-acc': '0.970'}
+2022-10-10 03:44:07,578 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 03:44:07,635 P51014 INFO {'f1': '0.079', 'rc': '0.532', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-10 03:44:07,687 P51014 INFO {'f1': '0.139', 'rc': '0.427', 'pc': '0.083', 'top6-acc': '0.970'}
+2022-10-10 03:44:07,731 P51014 INFO {'f1': '0.481', 'rc': '0.369', 'pc': '0.692', 'top7-acc': '0.970'}
+2022-10-10 03:44:07,777 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 03:44:07,821 P51014 INFO {'f1': '0.408', 'rc': '0.288', 'pc': '0.697', 'top9-acc': '0.970'}
+2022-10-10 03:44:07,868 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 03:44:07,868 P51014 INFO Finish counting [3.85s]
+2022-10-10 03:52:04,990 P51014 INFO Epoch 37/100, training loss: 1.06994 [476.80s]
+2022-10-10 03:52:04,992 P51014 INFO Evaluating test data.
+2022-10-10 03:52:35,020 P51014 INFO Finish inference. [30.03s]
+2022-10-10 03:52:39,227 P51014 INFO Calculating acc sum.
+2022-10-10 03:52:39,341 P51014 INFO Finish generating store_df.
+2022-10-10 03:52:39,509 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 03:52:39,569 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 03:52:39,628 P51014 INFO {'f1': '0.087', 'rc': '0.749', 'pc': '0.046', 'top3-acc': '0.970'}
+2022-10-10 03:52:39,687 P51014 INFO {'f1': '0.072', 'rc': '0.542', 'pc': '0.038', 'top4-acc': '0.970'}
+2022-10-10 03:52:39,744 P51014 INFO {'f1': '0.079', 'rc': '0.533', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-10 03:52:39,800 P51014 INFO {'f1': '0.091', 'rc': '0.514', 'pc': '0.050', 'top6-acc': '0.970'}
+2022-10-10 03:52:39,844 P51014 INFO {'f1': '0.540', 'rc': '0.430', 'pc': '0.724', 'top7-acc': '0.970'}
+2022-10-10 03:52:39,891 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 03:52:39,936 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 03:52:39,980 P51014 INFO {'f1': '0.407', 'rc': '0.287', 'pc': '0.696', 'top10-acc': '0.970'}
+2022-10-10 03:52:39,980 P51014 INFO Finish counting [3.88s]
+2022-10-10 04:00:41,674 P51014 INFO Epoch 38/100, training loss: 1.09540 [481.38s]
+2022-10-10 04:00:41,676 P51014 INFO Evaluating test data.
+2022-10-10 04:01:22,334 P51014 INFO Finish inference. [40.66s]
+2022-10-10 04:01:26,587 P51014 INFO Calculating acc sum.
+2022-10-10 04:01:26,714 P51014 INFO Finish generating store_df.
+2022-10-10 04:01:26,871 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 04:01:26,923 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 04:01:26,975 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 04:01:27,034 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 04:01:27,088 P51014 INFO {'f1': '0.094', 'rc': '0.500', 'pc': '0.052', 'top5-acc': '0.970'}
+2022-10-10 04:01:27,139 P51014 INFO {'f1': '0.150', 'rc': '0.470', 'pc': '0.089', 'top6-acc': '0.970'}
+2022-10-10 04:01:27,185 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 04:01:27,232 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 04:01:27,277 P51014 INFO {'f1': '0.408', 'rc': '0.288', 'pc': '0.697', 'top9-acc': '0.970'}
+2022-10-10 04:01:27,321 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 04:01:27,321 P51014 INFO Finish counting [3.91s]
+2022-10-10 04:10:00,037 P51014 INFO Epoch 39/100, training loss: 1.12281 [512.31s]
+2022-10-10 04:10:00,039 P51014 INFO Evaluating test data.
+2022-10-10 04:10:31,648 P51014 INFO Finish inference. [31.61s]
+2022-10-10 04:10:35,867 P51014 INFO Calculating acc sum.
+2022-10-10 04:10:35,982 P51014 INFO Finish generating store_df.
+2022-10-10 04:10:36,136 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 04:10:36,189 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 04:10:36,245 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 04:10:36,304 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 04:10:36,361 P51014 INFO {'f1': '0.120', 'rc': '0.824', 'pc': '0.064', 'top5-acc': '0.970'}
+2022-10-10 04:10:36,411 P51014 INFO {'f1': '0.136', 'rc': '0.420', 'pc': '0.081', 'top6-acc': '0.970'}
+2022-10-10 04:10:36,457 P51014 INFO {'f1': '0.477', 'rc': '0.369', 'pc': '0.675', 'top7-acc': '0.970'}
+2022-10-10 04:10:36,502 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 04:10:36,546 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top9-acc': '0.970'}
+2022-10-10 04:10:36,591 P51014 INFO {'f1': '0.404', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 04:10:36,591 P51014 INFO Finish counting [3.87s]
+2022-10-10 04:18:58,156 P51014 INFO Epoch 40/100, training loss: 1.06455 [501.28s]
+2022-10-10 04:18:58,157 P51014 INFO Evaluating test data.
+2022-10-10 04:19:29,234 P51014 INFO Finish inference. [31.08s]
+2022-10-10 04:19:33,476 P51014 INFO Calculating acc sum.
+2022-10-10 04:19:33,605 P51014 INFO Finish generating store_df.
+2022-10-10 04:19:33,764 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 04:19:33,818 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 04:19:33,872 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top3-acc': '0.970'}
+2022-10-10 04:19:33,931 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 04:19:33,988 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 04:19:34,045 P51014 INFO {'f1': '0.091', 'rc': '0.518', 'pc': '0.050', 'top6-acc': '0.970'}
+2022-10-10 04:19:34,089 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 04:19:34,133 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 04:19:34,183 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 04:19:34,235 P51014 INFO {'f1': '0.404', 'rc': '0.287', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 04:19:34,235 P51014 INFO Finish counting [3.91s]
+2022-10-10 04:27:40,609 P51014 INFO Epoch 41/100, training loss: 1.07284 [486.04s]
+2022-10-10 04:27:40,611 P51014 INFO Evaluating test data.
+2022-10-10 04:28:10,936 P51014 INFO Finish inference. [30.32s]
+2022-10-10 04:28:15,118 P51014 INFO Calculating acc sum.
+2022-10-10 04:28:15,231 P51014 INFO Finish generating store_df.
+2022-10-10 04:28:15,385 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 04:28:15,446 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 04:28:15,503 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 04:28:15,557 P51014 INFO {'f1': '0.143', 'rc': '0.799', 'pc': '0.079', 'top4-acc': '0.970'}
+2022-10-10 04:28:15,612 P51014 INFO {'f1': '0.112', 'rc': '0.602', 'pc': '0.062', 'top5-acc': '0.970'}
+2022-10-10 04:28:15,663 P51014 INFO {'f1': '0.180', 'rc': '0.572', 'pc': '0.107', 'top6-acc': '0.970'}
+2022-10-10 04:28:15,707 P51014 INFO {'f1': '0.394', 'rc': '0.289', 'pc': '0.619', 'top7-acc': '0.970'}
+2022-10-10 04:28:15,751 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 04:28:15,795 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 04:28:15,840 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.683', 'top10-acc': '0.970'}
+2022-10-10 04:28:15,840 P51014 INFO Finish counting [3.84s]
+2022-10-10 04:36:27,749 P51014 INFO Epoch 42/100, training loss: 1.10549 [491.57s]
+2022-10-10 04:36:27,751 P51014 INFO Evaluating test data.
+2022-10-10 04:36:58,361 P51014 INFO Finish inference. [30.61s]
+2022-10-10 04:37:02,564 P51014 INFO Calculating acc sum.
+2022-10-10 04:37:02,677 P51014 INFO Finish generating store_df.
+2022-10-10 04:37:02,826 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 04:37:02,885 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 04:37:02,945 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 04:37:03,015 P51014 INFO {'f1': '0.083', 'rc': '0.650', 'pc': '0.044', 'top4-acc': '0.970'}
+2022-10-10 04:37:03,076 P51014 INFO {'f1': '0.094', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 04:37:03,128 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 04:37:03,172 P51014 INFO {'f1': '0.477', 'rc': '0.369', 'pc': '0.674', 'top7-acc': '0.970'}
+2022-10-10 04:37:03,216 P51014 INFO {'f1': '0.482', 'rc': '0.369', 'pc': '0.696', 'top8-acc': '0.970'}
+2022-10-10 04:37:03,260 P51014 INFO {'f1': '0.491', 'rc': '0.366', 'pc': '0.745', 'top9-acc': '0.970'}
+2022-10-10 04:37:03,304 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 04:37:03,304 P51014 INFO Finish counting [3.88s]
+2022-10-10 04:45:34,753 P51014 INFO Epoch 43/100, training loss: 1.12277 [511.11s]
+2022-10-10 04:45:34,754 P51014 INFO Evaluating test data.
+2022-10-10 04:46:06,185 P51014 INFO Finish inference. [31.43s]
+2022-10-10 04:46:10,410 P51014 INFO Calculating acc sum.
+2022-10-10 04:46:10,537 P51014 INFO Finish generating store_df.
+2022-10-10 04:46:10,713 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 04:46:10,771 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 04:46:10,830 P51014 INFO {'f1': '0.115', 'rc': '1.000', 'pc': '0.061', 'top3-acc': '0.970'}
+2022-10-10 04:46:10,888 P51014 INFO {'f1': '0.102', 'rc': '0.806', 'pc': '0.054', 'top4-acc': '0.970'}
+2022-10-10 04:46:10,944 P51014 INFO {'f1': '0.117', 'rc': '0.806', 'pc': '0.063', 'top5-acc': '0.970'}
+2022-10-10 04:46:10,999 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 04:46:11,043 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 04:46:11,087 P51014 INFO {'f1': '0.486', 'rc': '0.369', 'pc': '0.712', 'top8-acc': '0.970'}
+2022-10-10 04:46:11,131 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top9-acc': '0.970'}
+2022-10-10 04:46:11,175 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 04:46:11,175 P51014 INFO Finish counting [3.88s]
+2022-10-10 04:54:33,416 P51014 INFO Epoch 44/100, training loss: 1.08947 [501.92s]
+2022-10-10 04:54:33,418 P51014 INFO Evaluating test data.
+2022-10-10 04:55:03,990 P51014 INFO Finish inference. [30.57s]
+2022-10-10 04:55:08,201 P51014 INFO Calculating acc sum.
+2022-10-10 04:55:08,315 P51014 INFO Finish generating store_df.
+2022-10-10 04:55:08,468 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 04:55:08,526 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 04:55:08,585 P51014 INFO {'f1': '0.115', 'rc': '1.000', 'pc': '0.061', 'top3-acc': '0.970'}
+2022-10-10 04:55:08,643 P51014 INFO {'f1': '0.128', 'rc': '1.000', 'pc': '0.069', 'top4-acc': '0.970'}
+2022-10-10 04:55:08,700 P51014 INFO {'f1': '0.143', 'rc': '1.000', 'pc': '0.077', 'top5-acc': '0.970'}
+2022-10-10 04:55:08,754 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 04:55:08,798 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 04:55:08,842 P51014 INFO {'f1': '0.556', 'rc': '0.437', 'pc': '0.766', 'top8-acc': '0.970'}
+2022-10-10 04:55:08,885 P51014 INFO {'f1': '0.557', 'rc': '0.434', 'pc': '0.775', 'top9-acc': '0.970'}
+2022-10-10 04:55:08,929 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 04:55:08,929 P51014 INFO Finish counting [3.85s]
+2022-10-10 05:03:20,333 P51014 INFO Epoch 45/100, training loss: 1.05858 [491.08s]
+2022-10-10 05:03:20,334 P51014 INFO Evaluating test data.
+2022-10-10 05:03:50,744 P51014 INFO Finish inference. [30.41s]
+2022-10-10 05:03:54,970 P51014 INFO Calculating acc sum.
+2022-10-10 05:03:55,083 P51014 INFO Finish generating store_df.
+2022-10-10 05:03:55,237 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:03:55,296 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 05:03:55,355 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 05:03:55,413 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 05:03:55,470 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 05:03:55,522 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 05:03:55,566 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 05:03:55,610 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 05:03:55,654 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top9-acc': '0.970'}
+2022-10-10 05:03:55,698 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 05:03:55,699 P51014 INFO Finish counting [3.87s]
+2022-10-10 05:12:03,799 P51014 INFO Epoch 46/100, training loss: 1.18476 [487.78s]
+2022-10-10 05:12:03,801 P51014 INFO Evaluating test data.
+2022-10-10 05:12:34,306 P51014 INFO Finish inference. [30.50s]
+2022-10-10 05:12:38,510 P51014 INFO Calculating acc sum.
+2022-10-10 05:12:38,624 P51014 INFO Finish generating store_df.
+2022-10-10 05:12:38,769 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:12:38,822 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 05:12:38,876 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 05:12:38,932 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top4-acc': '0.970'}
+2022-10-10 05:12:38,993 P51014 INFO {'f1': '0.079', 'rc': '0.533', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-10 05:12:39,046 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 05:12:39,090 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 05:12:39,134 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top8-acc': '0.970'}
+2022-10-10 05:12:39,179 P51014 INFO {'f1': '0.549', 'rc': '0.435', 'pc': '0.743', 'top9-acc': '0.970'}
+2022-10-10 05:12:39,225 P51014 INFO {'f1': '0.471', 'rc': '0.354', 'pc': '0.702', 'top10-acc': '0.970'}
+2022-10-10 05:12:39,225 P51014 INFO Finish counting [3.83s]
+2022-10-10 05:20:50,843 P51014 INFO Epoch 47/100, training loss: 1.16659 [491.31s]
+2022-10-10 05:20:50,845 P51014 INFO Evaluating test data.
+2022-10-10 05:21:32,064 P51014 INFO Finish inference. [41.22s]
+2022-10-10 05:21:36,279 P51014 INFO Calculating acc sum.
+2022-10-10 05:21:36,393 P51014 INFO Finish generating store_df.
+2022-10-10 05:21:36,558 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:21:36,629 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 05:21:36,687 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 05:21:36,746 P51014 INFO {'f1': '0.072', 'rc': '0.542', 'pc': '0.038', 'top4-acc': '0.970'}
+2022-10-10 05:21:36,803 P51014 INFO {'f1': '0.079', 'rc': '0.533', 'pc': '0.043', 'top5-acc': '0.970'}
+2022-10-10 05:21:36,854 P51014 INFO {'f1': '0.139', 'rc': '0.427', 'pc': '0.083', 'top6-acc': '0.970'}
+2022-10-10 05:21:36,898 P51014 INFO {'f1': '0.490', 'rc': '0.383', 'pc': '0.682', 'top7-acc': '0.970'}
+2022-10-10 05:21:36,942 P51014 INFO {'f1': '0.481', 'rc': '0.368', 'pc': '0.695', 'top8-acc': '0.970'}
+2022-10-10 05:21:36,986 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 05:21:37,031 P51014 INFO {'f1': '0.405', 'rc': '0.287', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 05:21:37,031 P51014 INFO Finish counting [3.90s]
+2022-10-10 05:30:02,581 P51014 INFO Epoch 48/100, training loss: 1.07227 [505.22s]
+2022-10-10 05:30:02,583 P51014 INFO Evaluating test data.
+2022-10-10 05:30:33,536 P51014 INFO Finish inference. [30.95s]
+2022-10-10 05:30:37,790 P51014 INFO Calculating acc sum.
+2022-10-10 05:30:37,905 P51014 INFO Finish generating store_df.
+2022-10-10 05:30:38,065 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:30:38,125 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 05:30:38,185 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 05:30:38,245 P51014 INFO {'f1': '0.106', 'rc': '0.843', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 05:30:38,302 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 05:30:38,353 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 05:30:38,398 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 05:30:38,442 P51014 INFO {'f1': '0.473', 'rc': '0.357', 'pc': '0.703', 'top8-acc': '0.970'}
+2022-10-10 05:30:38,487 P51014 INFO {'f1': '0.473', 'rc': '0.357', 'pc': '0.704', 'top9-acc': '0.970'}
+2022-10-10 05:30:38,531 P51014 INFO {'f1': '0.401', 'rc': '0.288', 'pc': '0.659', 'top10-acc': '0.970'}
+2022-10-10 05:30:38,531 P51014 INFO Finish counting [3.93s]
+2022-10-10 05:38:46,157 P51014 INFO Epoch 49/100, training loss: 1.16314 [487.27s]
+2022-10-10 05:38:46,158 P51014 INFO Evaluating test data.
+2022-10-10 05:39:16,481 P51014 INFO Finish inference. [30.32s]
+2022-10-10 05:39:20,676 P51014 INFO Calculating acc sum.
+2022-10-10 05:39:20,787 P51014 INFO Finish generating store_df.
+2022-10-10 05:39:20,945 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:39:20,996 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 05:39:21,047 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 05:39:21,098 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top4-acc': '0.970'}
+2022-10-10 05:39:21,155 P51014 INFO {'f1': '0.143', 'rc': '1.000', 'pc': '0.077', 'top5-acc': '0.970'}
+2022-10-10 05:39:21,206 P51014 INFO {'f1': '0.291', 'rc': '0.995', 'pc': '0.170', 'top6-acc': '0.970'}
+2022-10-10 05:39:21,251 P51014 INFO {'f1': '0.909', 'rc': '0.994', 'pc': '0.837', 'top7-acc': '0.970'}
+2022-10-10 05:39:21,295 P51014 INFO {'f1': '0.818', 'rc': '0.801', 'pc': '0.835', 'top8-acc': '0.970'}
+2022-10-10 05:39:21,338 P51014 INFO {'f1': '0.571', 'rc': '0.456', 'pc': '0.761', 'top9-acc': '0.970'}
+2022-10-10 05:39:21,382 P51014 INFO {'f1': '0.401', 'rc': '0.286', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 05:39:21,382 P51014 INFO Finish counting [3.83s]
+2022-10-10 05:47:17,219 P51014 INFO Epoch 50/100, training loss: 1.21342 [475.55s]
+2022-10-10 05:47:17,221 P51014 INFO Evaluating test data.
+2022-10-10 05:47:47,420 P51014 INFO Finish inference. [30.20s]
+2022-10-10 05:47:51,633 P51014 INFO Calculating acc sum.
+2022-10-10 05:47:51,746 P51014 INFO Finish generating store_df.
+2022-10-10 05:47:51,899 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:47:51,954 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 05:47:52,006 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 05:47:52,057 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top4-acc': '0.970'}
+2022-10-10 05:47:52,110 P51014 INFO {'f1': '0.056', 'rc': '0.806', 'pc': '0.029', 'top5-acc': '0.970'}
+2022-10-10 05:47:52,164 P51014 INFO {'f1': '0.060', 'rc': '0.806', 'pc': '0.031', 'top6-acc': '0.970'}
+2022-10-10 05:47:52,211 P51014 INFO {'f1': '0.436', 'rc': '0.802', 'pc': '0.300', 'top7-acc': '0.970'}
+2022-10-10 05:47:52,256 P51014 INFO {'f1': '0.815', 'rc': '0.801', 'pc': '0.829', 'top8-acc': '0.970'}
+2022-10-10 05:47:52,299 P51014 INFO {'f1': '0.473', 'rc': '0.354', 'pc': '0.712', 'top9-acc': '0.970'}
+2022-10-10 05:47:52,343 P51014 INFO {'f1': '0.460', 'rc': '0.341', 'pc': '0.704', 'top10-acc': '0.970'}
+2022-10-10 05:47:52,343 P51014 INFO Finish counting [3.84s]
+2022-10-10 05:55:50,469 P51014 INFO Epoch 51/100, training loss: 1.22795 [477.79s]
+2022-10-10 05:55:50,471 P51014 INFO Evaluating test data.
+2022-10-10 05:56:20,704 P51014 INFO Finish inference. [30.23s]
+2022-10-10 05:56:24,893 P51014 INFO Calculating acc sum.
+2022-10-10 05:56:25,007 P51014 INFO Finish generating store_df.
+2022-10-10 05:56:25,159 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 05:56:25,211 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 05:56:25,263 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 05:56:25,322 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 05:56:25,378 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 05:56:25,433 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 05:56:25,477 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 05:56:25,521 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top8-acc': '0.970'}
+2022-10-10 05:56:25,565 P51014 INFO {'f1': '0.484', 'rc': '0.367', 'pc': '0.710', 'top9-acc': '0.970'}
+2022-10-10 05:56:25,609 P51014 INFO {'f1': '0.399', 'rc': '0.286', 'pc': '0.657', 'top10-acc': '0.970'}
+2022-10-10 05:56:25,609 P51014 INFO Finish counting [3.84s]
+2022-10-10 06:04:56,185 P51014 INFO Epoch 52/100, training loss: 1.06284 [510.24s]
+2022-10-10 06:04:56,187 P51014 INFO Evaluating test data.
+2022-10-10 06:05:27,900 P51014 INFO Finish inference. [31.71s]
+2022-10-10 06:05:32,151 P51014 INFO Calculating acc sum.
+2022-10-10 06:05:32,277 P51014 INFO Finish generating store_df.
+2022-10-10 06:05:32,447 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 06:05:32,503 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 06:05:32,557 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 06:05:32,608 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top4-acc': '0.970'}
+2022-10-10 06:05:32,664 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 06:05:32,721 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 06:05:32,765 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 06:05:32,808 P51014 INFO {'f1': '0.403', 'rc': '0.288', 'pc': '0.669', 'top8-acc': '0.970'}
+2022-10-10 06:05:32,852 P51014 INFO {'f1': '0.403', 'rc': '0.288', 'pc': '0.669', 'top9-acc': '0.970'}
+2022-10-10 06:05:32,896 P51014 INFO {'f1': '0.401', 'rc': '0.286', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 06:05:32,896 P51014 INFO Finish counting [3.90s]
+2022-10-10 06:13:53,298 P51014 INFO Epoch 53/100, training loss: 1.04790 [500.09s]
+2022-10-10 06:13:53,300 P51014 INFO Evaluating test data.
+2022-10-10 06:14:23,766 P51014 INFO Finish inference. [30.47s]
+2022-10-10 06:14:27,915 P51014 INFO Calculating acc sum.
+2022-10-10 06:14:28,032 P51014 INFO Finish generating store_df.
+2022-10-10 06:14:28,193 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 06:14:28,259 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 06:14:28,319 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 06:14:28,378 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 06:14:28,436 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 06:14:28,488 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 06:14:28,532 P51014 INFO {'f1': '0.537', 'rc': '0.430', 'pc': '0.715', 'top7-acc': '0.970'}
+2022-10-10 06:14:28,576 P51014 INFO {'f1': '0.486', 'rc': '0.369', 'pc': '0.712', 'top8-acc': '0.970'}
+2022-10-10 06:14:28,620 P51014 INFO {'f1': '0.402', 'rc': '0.289', 'pc': '0.659', 'top9-acc': '0.970'}
+2022-10-10 06:14:28,664 P51014 INFO {'f1': '0.401', 'rc': '0.286', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 06:14:28,664 P51014 INFO Finish counting [3.82s]
+2022-10-10 06:22:40,357 P51014 INFO Epoch 54/100, training loss: 1.05586 [491.38s]
+2022-10-10 06:22:40,358 P51014 INFO Evaluating test data.
+2022-10-10 06:23:10,866 P51014 INFO Finish inference. [30.51s]
+2022-10-10 06:23:15,067 P51014 INFO Calculating acc sum.
+2022-10-10 06:23:15,180 P51014 INFO Finish generating store_df.
+2022-10-10 06:23:15,362 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 06:23:15,414 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 06:23:15,470 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 06:23:15,531 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 06:23:15,588 P51014 INFO {'f1': '0.093', 'rc': '0.631', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 06:23:15,640 P51014 INFO {'f1': '0.167', 'rc': '0.522', 'pc': '0.099', 'top6-acc': '0.970'}
+2022-10-10 06:23:15,685 P51014 INFO {'f1': '0.481', 'rc': '0.369', 'pc': '0.692', 'top7-acc': '0.970'}
+2022-10-10 06:23:15,731 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 06:23:15,776 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 06:23:15,820 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 06:23:15,820 P51014 INFO Finish counting [3.86s]
+2022-10-10 06:31:26,202 P51014 INFO Epoch 55/100, training loss: 1.06326 [490.09s]
+2022-10-10 06:31:26,204 P51014 INFO Evaluating test data.
+2022-10-10 06:31:56,574 P51014 INFO Finish inference. [30.37s]
+2022-10-10 06:32:00,846 P51014 INFO Calculating acc sum.
+2022-10-10 06:32:00,962 P51014 INFO Finish generating store_df.
+2022-10-10 06:32:01,148 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 06:32:01,201 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 06:32:01,261 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 06:32:01,320 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 06:32:01,376 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 06:32:01,430 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 06:32:01,474 P51014 INFO {'f1': '0.537', 'rc': '0.430', 'pc': '0.714', 'top7-acc': '0.970'}
+2022-10-10 06:32:01,518 P51014 INFO {'f1': '0.488', 'rc': '0.369', 'pc': '0.721', 'top8-acc': '0.970'}
+2022-10-10 06:32:01,562 P51014 INFO {'f1': '0.493', 'rc': '0.368', 'pc': '0.746', 'top9-acc': '0.970'}
+2022-10-10 06:32:01,607 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 06:32:01,607 P51014 INFO Finish counting [3.95s]
+2022-10-10 06:40:18,971 P51014 INFO Epoch 56/100, training loss: 1.05997 [496.97s]
+2022-10-10 06:40:18,972 P51014 INFO Evaluating test data.
+2022-10-10 06:40:59,985 P51014 INFO Finish inference. [41.01s]
+2022-10-10 06:41:04,218 P51014 INFO Calculating acc sum.
+2022-10-10 06:41:04,333 P51014 INFO Finish generating store_df.
+2022-10-10 06:41:04,482 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 06:41:04,534 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 06:41:04,594 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 06:41:04,652 P51014 INFO {'f1': '0.106', 'rc': '0.844', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 06:41:04,708 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 06:41:04,760 P51014 INFO {'f1': '0.236', 'rc': '0.765', 'pc': '0.139', 'top6-acc': '0.970'}
+2022-10-10 06:41:04,806 P51014 INFO {'f1': '0.708', 'rc': '0.631', 'pc': '0.808', 'top7-acc': '0.970'}
+2022-10-10 06:41:04,850 P51014 INFO {'f1': '0.556', 'rc': '0.437', 'pc': '0.766', 'top8-acc': '0.970'}
+2022-10-10 06:41:04,894 P51014 INFO {'f1': '0.491', 'rc': '0.366', 'pc': '0.745', 'top9-acc': '0.970'}
+2022-10-10 06:41:04,938 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 06:41:04,938 P51014 INFO Finish counting [3.90s]
+2022-10-10 06:49:34,359 P51014 INFO Epoch 57/100, training loss: 1.08526 [509.09s]
+2022-10-10 06:49:34,360 P51014 INFO Evaluating test data.
+2022-10-10 06:50:05,122 P51014 INFO Finish inference. [30.76s]
+2022-10-10 06:50:09,353 P51014 INFO Calculating acc sum.
+2022-10-10 06:50:09,469 P51014 INFO Finish generating store_df.
+2022-10-10 06:50:09,611 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 06:50:09,663 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 06:50:09,722 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 06:50:09,782 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top4-acc': '0.970'}
+2022-10-10 06:50:09,841 P51014 INFO {'f1': '0.106', 'rc': '0.844', 'pc': '0.057', 'top5-acc': '0.970'}
+2022-10-10 06:50:09,898 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top6-acc': '0.970'}
+2022-10-10 06:50:09,954 P51014 INFO {'f1': '0.091', 'rc': '0.514', 'pc': '0.050', 'top7-acc': '0.970'}
+2022-10-10 06:50:09,998 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 06:50:10,055 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 06:50:10,109 P51014 INFO {'f1': '0.405', 'rc': '0.287', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 06:50:10,109 P51014 INFO Finish counting [3.90s]
+2022-10-10 06:58:25,025 P51014 INFO Epoch 58/100, training loss: 1.06700 [494.61s]
+2022-10-10 06:58:25,027 P51014 INFO Evaluating test data.
+2022-10-10 06:58:55,737 P51014 INFO Finish inference. [30.71s]
+2022-10-10 06:58:59,986 P51014 INFO Calculating acc sum.
+2022-10-10 06:59:00,106 P51014 INFO Finish generating store_df.
+2022-10-10 06:59:00,289 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 06:59:00,349 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 06:59:00,402 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 06:59:00,461 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 06:59:00,518 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 06:59:00,575 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 06:59:00,621 P51014 INFO {'f1': '0.537', 'rc': '0.430', 'pc': '0.714', 'top7-acc': '0.970'}
+2022-10-10 06:59:00,665 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 06:59:00,709 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 06:59:00,753 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 06:59:00,753 P51014 INFO Finish counting [3.93s]
+2022-10-10 07:07:15,903 P51014 INFO Epoch 59/100, training loss: 1.01162 [494.80s]
+2022-10-10 07:07:15,904 P51014 INFO Evaluating test data.
+2022-10-10 07:07:46,559 P51014 INFO Finish inference. [30.65s]
+2022-10-10 07:07:50,762 P51014 INFO Calculating acc sum.
+2022-10-10 07:07:50,876 P51014 INFO Finish generating store_df.
+2022-10-10 07:07:51,027 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 07:07:51,080 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 07:07:51,136 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 07:07:51,200 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 07:07:51,262 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 07:07:51,314 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 07:07:51,358 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 07:07:51,403 P51014 INFO {'f1': '0.587', 'rc': '0.471', 'pc': '0.780', 'top8-acc': '0.970'}
+2022-10-10 07:07:51,446 P51014 INFO {'f1': '0.513', 'rc': '0.388', 'pc': '0.756', 'top9-acc': '0.970'}
+2022-10-10 07:07:51,490 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 07:07:51,490 P51014 INFO Finish counting [3.86s]
+2022-10-10 07:15:59,832 P51014 INFO Epoch 60/100, training loss: 0.99101 [488.01s]
+2022-10-10 07:15:59,834 P51014 INFO Evaluating test data.
+2022-10-10 07:16:40,009 P51014 INFO Finish inference. [40.17s]
+2022-10-10 07:16:44,210 P51014 INFO Calculating acc sum.
+2022-10-10 07:16:44,326 P51014 INFO Finish generating store_df.
+2022-10-10 07:16:44,484 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 07:16:44,552 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 07:16:44,609 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 07:16:44,668 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 07:16:44,725 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 07:16:44,778 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 07:16:44,828 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 07:16:44,872 P51014 INFO {'f1': '0.479', 'rc': '0.357', 'pc': '0.728', 'top8-acc': '0.970'}
+2022-10-10 07:16:44,917 P51014 INFO {'f1': '0.479', 'rc': '0.357', 'pc': '0.728', 'top9-acc': '0.970'}
+2022-10-10 07:16:44,961 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 07:16:44,961 P51014 INFO Finish counting [3.86s]
+2022-10-10 07:25:10,091 P51014 INFO Epoch 61/100, training loss: 1.05868 [504.81s]
+2022-10-10 07:25:10,092 P51014 INFO Evaluating test data.
+2022-10-10 07:25:41,844 P51014 INFO Finish inference. [31.75s]
+2022-10-10 07:25:46,057 P51014 INFO Calculating acc sum.
+2022-10-10 07:25:46,176 P51014 INFO Finish generating store_df.
+2022-10-10 07:25:46,331 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 07:25:46,389 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 07:25:46,449 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 07:25:46,508 P51014 INFO {'f1': '0.083', 'rc': '0.650', 'pc': '0.044', 'top4-acc': '0.970'}
+2022-10-10 07:25:46,564 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 07:25:46,620 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 07:25:46,664 P51014 INFO {'f1': '0.571', 'rc': '0.471', 'pc': '0.725', 'top7-acc': '0.970'}
+2022-10-10 07:25:46,708 P51014 INFO {'f1': '0.482', 'rc': '0.368', 'pc': '0.696', 'top8-acc': '0.970'}
+2022-10-10 07:25:46,752 P51014 INFO {'f1': '0.491', 'rc': '0.368', 'pc': '0.736', 'top9-acc': '0.970'}
+2022-10-10 07:25:46,796 P51014 INFO {'f1': '0.490', 'rc': '0.365', 'pc': '0.745', 'top10-acc': '0.970'}
+2022-10-10 07:25:46,796 P51014 INFO Finish counting [3.87s]
+2022-10-10 07:33:58,055 P51014 INFO Epoch 62/100, training loss: 1.14436 [490.93s]
+2022-10-10 07:33:58,057 P51014 INFO Evaluating test data.
+2022-10-10 07:34:28,523 P51014 INFO Finish inference. [30.47s]
+2022-10-10 07:34:32,736 P51014 INFO Calculating acc sum.
+2022-10-10 07:34:32,848 P51014 INFO Finish generating store_df.
+2022-10-10 07:34:32,999 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 07:34:33,051 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 07:34:33,104 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 07:34:33,156 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top4-acc': '0.970'}
+2022-10-10 07:34:33,213 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 07:34:33,265 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 07:34:33,309 P51014 INFO {'f1': '0.550', 'rc': '0.436', 'pc': '0.743', 'top7-acc': '0.970'}
+2022-10-10 07:34:33,354 P51014 INFO {'f1': '0.490', 'rc': '0.368', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 07:34:33,398 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 07:34:33,442 P51014 INFO {'f1': '0.405', 'rc': '0.287', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 07:34:33,442 P51014 INFO Finish counting [3.85s]
+2022-10-10 07:42:39,376 P51014 INFO Epoch 63/100, training loss: 1.15227 [485.60s]
+2022-10-10 07:42:39,377 P51014 INFO Evaluating test data.
+2022-10-10 07:43:09,602 P51014 INFO Finish inference. [30.22s]
+2022-10-10 07:43:13,787 P51014 INFO Calculating acc sum.
+2022-10-10 07:43:13,900 P51014 INFO Finish generating store_df.
+2022-10-10 07:43:14,049 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 07:43:14,100 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 07:43:14,152 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top3-acc': '0.970'}
+2022-10-10 07:43:14,203 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top4-acc': '0.970'}
+2022-10-10 07:43:14,259 P51014 INFO {'f1': '0.093', 'rc': '0.634', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 07:43:14,313 P51014 INFO {'f1': '0.108', 'rc': '0.617', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 07:43:14,356 P51014 INFO {'f1': '0.498', 'rc': '0.382', 'pc': '0.714', 'top7-acc': '0.970'}
+2022-10-10 07:43:14,399 P51014 INFO {'f1': '0.401', 'rc': '0.289', 'pc': '0.659', 'top8-acc': '0.970'}
+2022-10-10 07:43:14,443 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.668', 'top9-acc': '0.970'}
+2022-10-10 07:43:14,486 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 07:43:14,486 P51014 INFO Finish counting [3.83s]
+2022-10-10 07:51:25,386 P51014 INFO Epoch 64/100, training loss: 1.15480 [490.59s]
+2022-10-10 07:51:25,388 P51014 INFO Evaluating test data.
+2022-10-10 07:51:55,647 P51014 INFO Finish inference. [30.26s]
+2022-10-10 07:51:59,841 P51014 INFO Calculating acc sum.
+2022-10-10 07:51:59,954 P51014 INFO Finish generating store_df.
+2022-10-10 07:52:00,107 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 07:52:00,158 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 07:52:00,209 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 07:52:00,267 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 07:52:00,323 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 07:52:00,377 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 07:52:00,422 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 07:52:00,469 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 07:52:00,512 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 07:52:00,555 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 07:52:00,555 P51014 INFO Finish counting [3.83s]
+2022-10-10 08:00:21,209 P51014 INFO Epoch 65/100, training loss: 1.17176 [500.33s]
+2022-10-10 08:00:21,211 P51014 INFO Evaluating test data.
+2022-10-10 08:00:52,347 P51014 INFO Finish inference. [31.14s]
+2022-10-10 08:00:56,552 P51014 INFO Calculating acc sum.
+2022-10-10 08:00:56,669 P51014 INFO Finish generating store_df.
+2022-10-10 08:00:56,821 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 08:00:56,878 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 08:00:56,937 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 08:00:56,995 P51014 INFO {'f1': '0.106', 'rc': '0.844', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 08:00:57,050 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 08:00:57,104 P51014 INFO {'f1': '0.124', 'rc': '0.711', 'pc': '0.068', 'top6-acc': '0.970'}
+2022-10-10 08:00:57,148 P51014 INFO {'f1': '0.708', 'rc': '0.631', 'pc': '0.807', 'top7-acc': '0.970'}
+2022-10-10 08:00:57,191 P51014 INFO {'f1': '0.556', 'rc': '0.437', 'pc': '0.766', 'top8-acc': '0.970'}
+2022-10-10 08:00:57,235 P51014 INFO {'f1': '0.490', 'rc': '0.368', 'pc': '0.735', 'top9-acc': '0.970'}
+2022-10-10 08:00:57,279 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 08:00:57,279 P51014 INFO Finish counting [3.84s]
+2022-10-10 08:09:23,653 P51014 INFO Epoch 66/100, training loss: 1.08927 [506.04s]
+2022-10-10 08:09:23,654 P51014 INFO Evaluating test data.
+2022-10-10 08:09:54,586 P51014 INFO Finish inference. [30.93s]
+2022-10-10 08:09:58,838 P51014 INFO Calculating acc sum.
+2022-10-10 08:09:58,956 P51014 INFO Finish generating store_df.
+2022-10-10 08:09:59,112 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 08:09:59,176 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 08:09:59,237 P51014 INFO {'f1': '0.127', 'rc': '1.000', 'pc': '0.068', 'top3-acc': '0.970'}
+2022-10-10 08:09:59,300 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 08:09:59,360 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 08:09:59,412 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 08:09:59,457 P51014 INFO {'f1': '0.540', 'rc': '0.436', 'pc': '0.709', 'top7-acc': '0.970'}
+2022-10-10 08:09:59,501 P51014 INFO {'f1': '0.498', 'rc': '0.381', 'pc': '0.717', 'top8-acc': '0.970'}
+2022-10-10 08:09:59,547 P51014 INFO {'f1': '0.417', 'rc': '0.301', 'pc': '0.678', 'top9-acc': '0.970'}
+2022-10-10 08:09:59,591 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.669', 'top10-acc': '0.970'}
+2022-10-10 08:09:59,592 P51014 INFO Finish counting [3.92s]
+2022-10-10 08:18:12,384 P51014 INFO Epoch 67/100, training loss: 1.08430 [492.47s]
+2022-10-10 08:18:12,385 P51014 INFO Evaluating test data.
+2022-10-10 08:18:43,079 P51014 INFO Finish inference. [30.69s]
+2022-10-10 08:18:47,294 P51014 INFO Calculating acc sum.
+2022-10-10 08:18:47,408 P51014 INFO Finish generating store_df.
+2022-10-10 08:18:47,558 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 08:18:47,616 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 08:18:47,672 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 08:18:47,730 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 08:18:47,785 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 08:18:47,836 P51014 INFO {'f1': '0.207', 'rc': '0.663', 'pc': '0.123', 'top6-acc': '0.970'}
+2022-10-10 08:18:47,879 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 08:18:47,922 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 08:18:47,965 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 08:18:48,009 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.683', 'top10-acc': '0.970'}
+2022-10-10 08:18:48,009 P51014 INFO Finish counting [3.85s]
+2022-10-10 08:26:55,426 P51014 INFO Epoch 68/100, training loss: 1.04817 [487.08s]
+2022-10-10 08:26:55,427 P51014 INFO Evaluating test data.
+2022-10-10 08:27:26,007 P51014 INFO Finish inference. [30.58s]
+2022-10-10 08:27:30,193 P51014 INFO Calculating acc sum.
+2022-10-10 08:27:30,306 P51014 INFO Finish generating store_df.
+2022-10-10 08:27:30,456 P51014 INFO {'f1': '0.054', 'rc': '0.806', 'pc': '0.028', 'top1-acc': '0.970'}
+2022-10-10 08:27:30,516 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.049', 'top2-acc': '0.970'}
+2022-10-10 08:27:30,575 P51014 INFO {'f1': '0.077', 'rc': '0.657', 'pc': '0.041', 'top3-acc': '0.970'}
+2022-10-10 08:27:30,632 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 08:27:30,689 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 08:27:30,740 P51014 INFO {'f1': '0.152', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 08:27:30,783 P51014 INFO {'f1': '0.546', 'rc': '0.437', 'pc': '0.728', 'top7-acc': '0.970'}
+2022-10-10 08:27:30,827 P51014 INFO {'f1': '0.546', 'rc': '0.430', 'pc': '0.746', 'top8-acc': '0.970'}
+2022-10-10 08:27:30,870 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 08:27:30,913 P51014 INFO {'f1': '0.381', 'rc': '0.266', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 08:27:30,913 P51014 INFO Finish counting [3.84s]
+2022-10-10 08:35:44,606 P51014 INFO Epoch 69/100, training loss: 1.02146 [493.37s]
+2022-10-10 08:35:44,607 P51014 INFO Evaluating test data.
+2022-10-10 08:36:25,455 P51014 INFO Finish inference. [40.85s]
+2022-10-10 08:36:29,626 P51014 INFO Calculating acc sum.
+2022-10-10 08:36:29,739 P51014 INFO Finish generating store_df.
+2022-10-10 08:36:29,896 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 08:36:29,956 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 08:36:30,013 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 08:36:30,072 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 08:36:30,130 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 08:36:30,182 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 08:36:30,226 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 08:36:30,271 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 08:36:30,315 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 08:36:30,359 P51014 INFO {'f1': '0.381', 'rc': '0.266', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 08:36:30,360 P51014 INFO Finish counting [3.85s]
+2022-10-10 08:45:07,819 P51014 INFO Epoch 70/100, training loss: 1.11539 [517.13s]
+2022-10-10 08:45:07,820 P51014 INFO Evaluating test data.
+2022-10-10 08:45:39,241 P51014 INFO Finish inference. [31.42s]
+2022-10-10 08:45:43,465 P51014 INFO Calculating acc sum.
+2022-10-10 08:45:43,576 P51014 INFO Finish generating store_df.
+2022-10-10 08:45:43,721 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 08:45:43,783 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 08:45:43,843 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 08:45:43,902 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 08:45:43,960 P51014 INFO {'f1': '0.120', 'rc': '0.825', 'pc': '0.064', 'top5-acc': '0.970'}
+2022-10-10 08:45:44,016 P51014 INFO {'f1': '0.139', 'rc': '0.809', 'pc': '0.076', 'top6-acc': '0.970'}
+2022-10-10 08:45:44,068 P51014 INFO {'f1': '0.682', 'rc': '0.624', 'pc': '0.753', 'top7-acc': '0.970'}
+2022-10-10 08:45:44,113 P51014 INFO {'f1': '0.648', 'rc': '0.563', 'pc': '0.763', 'top8-acc': '0.970'}
+2022-10-10 08:45:44,157 P51014 INFO {'f1': '0.651', 'rc': '0.560', 'pc': '0.777', 'top9-acc': '0.970'}
+2022-10-10 08:45:44,201 P51014 INFO {'f1': '0.595', 'rc': '0.480', 'pc': '0.784', 'top10-acc': '0.970'}
+2022-10-10 08:45:44,202 P51014 INFO Finish counting [3.88s]
+2022-10-10 08:53:57,711 P51014 INFO Epoch 71/100, training loss: 1.09006 [493.18s]
+2022-10-10 08:53:57,713 P51014 INFO Evaluating test data.
+2022-10-10 08:54:28,523 P51014 INFO Finish inference. [30.81s]
+2022-10-10 08:54:32,716 P51014 INFO Calculating acc sum.
+2022-10-10 08:54:32,829 P51014 INFO Finish generating store_df.
+2022-10-10 08:54:32,981 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 08:54:33,039 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 08:54:33,102 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 08:54:33,161 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 08:54:33,217 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 08:54:33,271 P51014 INFO {'f1': '0.234', 'rc': '0.765', 'pc': '0.138', 'top6-acc': '0.970'}
+2022-10-10 08:54:33,315 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 08:54:33,359 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 08:54:33,403 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 08:54:33,448 P51014 INFO {'f1': '0.381', 'rc': '0.266', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 08:54:33,448 P51014 INFO Finish counting [3.85s]
+2022-10-10 09:02:48,683 P51014 INFO Epoch 72/100, training loss: 1.14722 [494.90s]
+2022-10-10 09:02:48,683 P51014 INFO Evaluating test data.
+2022-10-10 09:03:19,752 P51014 INFO Finish inference. [31.07s]
+2022-10-10 09:03:23,833 P51014 INFO Calculating acc sum.
+2022-10-10 09:03:23,950 P51014 INFO Finish generating store_df.
+2022-10-10 09:03:24,108 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:03:24,166 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 09:03:24,225 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 09:03:24,283 P51014 INFO {'f1': '0.106', 'rc': '0.844', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 09:03:24,338 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 09:03:24,389 P51014 INFO {'f1': '0.236', 'rc': '0.765', 'pc': '0.139', 'top6-acc': '0.970'}
+2022-10-10 09:03:24,433 P51014 INFO {'f1': '0.778', 'rc': '0.733', 'pc': '0.830', 'top7-acc': '0.970'}
+2022-10-10 09:03:24,476 P51014 INFO {'f1': '0.585', 'rc': '0.468', 'pc': '0.780', 'top8-acc': '0.970'}
+2022-10-10 09:03:24,522 P51014 INFO {'f1': '0.513', 'rc': '0.388', 'pc': '0.756', 'top9-acc': '0.970'}
+2022-10-10 09:03:24,569 P51014 INFO {'f1': '0.405', 'rc': '0.286', 'pc': '0.695', 'top10-acc': '0.970'}
+2022-10-10 09:03:24,569 P51014 INFO Finish counting [3.76s]
+2022-10-10 09:11:46,342 P51014 INFO Epoch 73/100, training loss: 1.11398 [501.51s]
+2022-10-10 09:11:46,344 P51014 INFO Evaluating test data.
+2022-10-10 09:12:17,044 P51014 INFO Finish inference. [30.70s]
+2022-10-10 09:12:21,245 P51014 INFO Calculating acc sum.
+2022-10-10 09:12:21,357 P51014 INFO Finish generating store_df.
+2022-10-10 09:12:21,502 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:12:21,565 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 09:12:21,627 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 09:12:21,687 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 09:12:21,743 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 09:12:21,797 P51014 INFO {'f1': '0.234', 'rc': '0.765', 'pc': '0.138', 'top6-acc': '0.970'}
+2022-10-10 09:12:21,843 P51014 INFO {'f1': '0.722', 'rc': '0.665', 'pc': '0.789', 'top7-acc': '0.970'}
+2022-10-10 09:12:21,887 P51014 INFO {'f1': '0.489', 'rc': '0.366', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 09:12:21,932 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 09:12:21,978 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 09:12:21,978 P51014 INFO Finish counting [3.86s]
+2022-10-10 09:20:43,606 P51014 INFO Epoch 74/100, training loss: 1.04616 [501.36s]
+2022-10-10 09:20:43,607 P51014 INFO Evaluating test data.
+2022-10-10 09:21:15,079 P51014 INFO Finish inference. [31.47s]
+2022-10-10 09:21:19,313 P51014 INFO Calculating acc sum.
+2022-10-10 09:21:19,438 P51014 INFO Finish generating store_df.
+2022-10-10 09:21:19,601 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:21:19,660 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 09:21:19,719 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 09:21:19,778 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 09:21:19,836 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 09:21:19,893 P51014 INFO {'f1': '0.152', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 09:21:19,938 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 09:21:19,982 P51014 INFO {'f1': '0.486', 'rc': '0.369', 'pc': '0.712', 'top8-acc': '0.970'}
+2022-10-10 09:21:20,026 P51014 INFO {'f1': '0.399', 'rc': '0.286', 'pc': '0.658', 'top9-acc': '0.970'}
+2022-10-10 09:21:20,071 P51014 INFO {'f1': '0.404', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 09:21:20,071 P51014 INFO Finish counting [3.88s]
+2022-10-10 09:29:47,009 P51014 INFO Epoch 75/100, training loss: 1.02314 [506.61s]
+2022-10-10 09:29:47,011 P51014 INFO Evaluating test data.
+2022-10-10 09:30:17,915 P51014 INFO Finish inference. [30.90s]
+2022-10-10 09:30:22,138 P51014 INFO Calculating acc sum.
+2022-10-10 09:30:22,255 P51014 INFO Finish generating store_df.
+2022-10-10 09:30:22,409 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:30:22,469 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 09:30:22,529 P51014 INFO {'f1': '0.077', 'rc': '0.657', 'pc': '0.041', 'top3-acc': '0.970'}
+2022-10-10 09:30:22,588 P51014 INFO {'f1': '0.083', 'rc': '0.650', 'pc': '0.044', 'top4-acc': '0.970'}
+2022-10-10 09:30:22,645 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 09:30:22,697 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 09:30:22,742 P51014 INFO {'f1': '0.625', 'rc': '0.532', 'pc': '0.756', 'top7-acc': '0.970'}
+2022-10-10 09:30:22,787 P51014 INFO {'f1': '0.587', 'rc': '0.471', 'pc': '0.780', 'top8-acc': '0.970'}
+2022-10-10 09:30:22,832 P51014 INFO {'f1': '0.510', 'rc': '0.388', 'pc': '0.746', 'top9-acc': '0.970'}
+2022-10-10 09:30:22,876 P51014 INFO {'f1': '0.382', 'rc': '0.266', 'pc': '0.679', 'top10-acc': '0.970'}
+2022-10-10 09:30:22,877 P51014 INFO Finish counting [3.87s]
+2022-10-10 09:38:46,035 P51014 INFO Epoch 76/100, training loss: 1.03733 [502.83s]
+2022-10-10 09:38:46,036 P51014 INFO Evaluating test data.
+2022-10-10 09:39:16,895 P51014 INFO Finish inference. [30.86s]
+2022-10-10 09:39:21,093 P51014 INFO Calculating acc sum.
+2022-10-10 09:39:21,208 P51014 INFO Finish generating store_df.
+2022-10-10 09:39:21,355 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:39:21,414 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 09:39:21,470 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 09:39:21,528 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 09:39:21,583 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 09:39:21,638 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 09:39:21,681 P51014 INFO {'f1': '0.477', 'rc': '0.369', 'pc': '0.674', 'top7-acc': '0.970'}
+2022-10-10 09:39:21,725 P51014 INFO {'f1': '0.490', 'rc': '0.368', 'pc': '0.735', 'top8-acc': '0.970'}
+2022-10-10 09:39:21,768 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 09:39:21,811 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 09:39:21,811 P51014 INFO Finish counting [3.86s]
+2022-10-10 09:47:36,369 P51014 INFO Epoch 77/100, training loss: 1.00747 [494.22s]
+2022-10-10 09:47:36,369 P51014 INFO Evaluating test data.
+2022-10-10 09:48:06,790 P51014 INFO Finish inference. [30.42s]
+2022-10-10 09:48:11,010 P51014 INFO Calculating acc sum.
+2022-10-10 09:48:11,122 P51014 INFO Finish generating store_df.
+2022-10-10 09:48:11,274 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:48:11,327 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 09:48:11,380 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 09:48:11,439 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 09:48:11,497 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 09:48:11,550 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 09:48:11,595 P51014 INFO {'f1': '0.537', 'rc': '0.430', 'pc': '0.715', 'top7-acc': '0.970'}
+2022-10-10 09:48:11,640 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top8-acc': '0.970'}
+2022-10-10 09:48:11,684 P51014 INFO {'f1': '0.408', 'rc': '0.288', 'pc': '0.697', 'top9-acc': '0.970'}
+2022-10-10 09:48:11,729 P51014 INFO {'f1': '0.407', 'rc': '0.287', 'pc': '0.697', 'top10-acc': '0.970'}
+2022-10-10 09:48:11,729 P51014 INFO Finish counting [3.85s]
+2022-10-10 09:56:17,627 P51014 INFO Epoch 78/100, training loss: 1.00308 [485.60s]
+2022-10-10 09:56:17,628 P51014 INFO Evaluating test data.
+2022-10-10 09:56:57,927 P51014 INFO Finish inference. [40.30s]
+2022-10-10 09:57:02,118 P51014 INFO Calculating acc sum.
+2022-10-10 09:57:02,233 P51014 INFO Finish generating store_df.
+2022-10-10 09:57:02,402 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 09:57:02,458 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 09:57:02,514 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 09:57:02,576 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 09:57:02,633 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 09:57:02,692 P51014 INFO {'f1': '0.108', 'rc': '0.616', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 09:57:02,737 P51014 INFO {'f1': '0.625', 'rc': '0.532', 'pc': '0.756', 'top7-acc': '0.970'}
+2022-10-10 09:57:02,784 P51014 INFO {'f1': '0.587', 'rc': '0.471', 'pc': '0.780', 'top8-acc': '0.970'}
+2022-10-10 09:57:02,833 P51014 INFO {'f1': '0.513', 'rc': '0.390', 'pc': '0.747', 'top9-acc': '0.970'}
+2022-10-10 09:57:02,880 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.686', 'top10-acc': '0.970'}
+2022-10-10 09:57:02,880 P51014 INFO Finish counting [3.89s]
+2022-10-10 10:05:27,629 P51014 INFO Epoch 79/100, training loss: 1.10987 [504.43s]
+2022-10-10 10:05:27,631 P51014 INFO Evaluating test data.
+2022-10-10 10:05:59,042 P51014 INFO Finish inference. [31.41s]
+2022-10-10 10:06:03,295 P51014 INFO Calculating acc sum.
+2022-10-10 10:06:03,413 P51014 INFO Finish generating store_df.
+2022-10-10 10:06:03,584 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 10:06:03,636 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 10:06:03,691 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 10:06:03,755 P51014 INFO {'f1': '0.107', 'rc': '0.848', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 10:06:03,816 P51014 INFO {'f1': '0.121', 'rc': '0.835', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 10:06:03,873 P51014 INFO {'f1': '0.091', 'rc': '0.518', 'pc': '0.050', 'top6-acc': '0.970'}
+2022-10-10 10:06:03,925 P51014 INFO {'f1': '0.490', 'rc': '0.376', 'pc': '0.705', 'top7-acc': '0.970'}
+2022-10-10 10:06:03,975 P51014 INFO {'f1': '0.485', 'rc': '0.368', 'pc': '0.711', 'top8-acc': '0.970'}
+2022-10-10 10:06:04,021 P51014 INFO {'f1': '0.487', 'rc': '0.368', 'pc': '0.721', 'top9-acc': '0.970'}
+2022-10-10 10:06:04,069 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.669', 'top10-acc': '0.970'}
+2022-10-10 10:06:04,070 P51014 INFO Finish counting [3.94s]
+2022-10-10 10:14:26,507 P51014 INFO Epoch 80/100, training loss: 1.16157 [502.10s]
+2022-10-10 10:14:26,508 P51014 INFO Evaluating test data.
+2022-10-10 10:14:56,887 P51014 INFO Finish inference. [30.38s]
+2022-10-10 10:15:01,095 P51014 INFO Calculating acc sum.
+2022-10-10 10:15:01,211 P51014 INFO Finish generating store_df.
+2022-10-10 10:15:01,358 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 10:15:01,411 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 10:15:01,468 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 10:15:01,529 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 10:15:01,589 P51014 INFO {'f1': '0.120', 'rc': '0.828', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 10:15:01,647 P51014 INFO {'f1': '0.107', 'rc': '0.608', 'pc': '0.058', 'top6-acc': '0.970'}
+2022-10-10 10:15:01,694 P51014 INFO {'f1': '0.477', 'rc': '0.369', 'pc': '0.674', 'top7-acc': '0.970'}
+2022-10-10 10:15:01,741 P51014 INFO {'f1': '0.482', 'rc': '0.369', 'pc': '0.696', 'top8-acc': '0.970'}
+2022-10-10 10:15:01,786 P51014 INFO {'f1': '0.491', 'rc': '0.369', 'pc': '0.736', 'top9-acc': '0.970'}
+2022-10-10 10:15:01,834 P51014 INFO {'f1': '0.492', 'rc': '0.368', 'pc': '0.746', 'top10-acc': '0.970'}
+2022-10-10 10:15:01,834 P51014 INFO Finish counting [3.87s]
+2022-10-10 10:29:14,662 P51014 INFO Epoch 81/100, training loss: 1.14607 [852.50s]
+2022-10-10 10:29:14,663 P51014 INFO Evaluating test data.
+2022-10-10 10:30:50,805 P51014 INFO Finish inference. [96.14s]
+2022-10-10 10:30:55,470 P51014 INFO Calculating acc sum.
+2022-10-10 10:30:55,650 P51014 INFO Finish generating store_df.
+2022-10-10 10:30:55,878 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 10:30:55,947 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 10:30:56,019 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 10:30:56,090 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 10:30:56,159 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 10:30:56,222 P51014 INFO {'f1': '0.180', 'rc': '0.571', 'pc': '0.107', 'top6-acc': '0.970'}
+2022-10-10 10:30:56,279 P51014 INFO {'f1': '0.630', 'rc': '0.532', 'pc': '0.771', 'top7-acc': '0.970'}
+2022-10-10 10:30:56,335 P51014 INFO {'f1': '0.545', 'rc': '0.430', 'pc': '0.741', 'top8-acc': '0.970'}
+2022-10-10 10:30:56,389 P51014 INFO {'f1': '0.487', 'rc': '0.368', 'pc': '0.721', 'top9-acc': '0.970'}
+2022-10-10 10:30:56,444 P51014 INFO {'f1': '0.378', 'rc': '0.266', 'pc': '0.651', 'top10-acc': '0.970'}
+2022-10-10 10:30:56,444 P51014 INFO Finish counting [4.39s]
+2022-10-10 10:42:21,507 P51014 INFO Epoch 82/100, training loss: 1.12242 [684.64s]
+2022-10-10 10:42:21,509 P51014 INFO Evaluating test data.
+2022-10-10 10:43:03,041 P51014 INFO Finish inference. [41.53s]
+2022-10-10 10:43:08,259 P51014 INFO Calculating acc sum.
+2022-10-10 10:43:08,439 P51014 INFO Finish generating store_df.
+2022-10-10 10:43:08,667 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 10:43:08,732 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 10:43:08,806 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 10:43:08,878 P51014 INFO {'f1': '0.106', 'rc': '0.844', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 10:43:08,961 P51014 INFO {'f1': '0.120', 'rc': '0.825', 'pc': '0.064', 'top5-acc': '0.970'}
+2022-10-10 10:43:09,038 P51014 INFO {'f1': '0.138', 'rc': '0.802', 'pc': '0.076', 'top6-acc': '0.970'}
+2022-10-10 10:43:09,100 P51014 INFO {'f1': '0.574', 'rc': '0.471', 'pc': '0.735', 'top7-acc': '0.970'}
+2022-10-10 10:43:09,162 P51014 INFO {'f1': '0.581', 'rc': '0.468', 'pc': '0.767', 'top8-acc': '0.970'}
+2022-10-10 10:43:09,218 P51014 INFO {'f1': '0.486', 'rc': '0.366', 'pc': '0.720', 'top9-acc': '0.970'}
+2022-10-10 10:43:09,273 P51014 INFO {'f1': '0.401', 'rc': '0.286', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 10:43:09,274 P51014 INFO Finish counting [4.81s]
+2022-10-10 10:54:29,734 P51014 INFO Epoch 83/100, training loss: 1.11358 [680.05s]
+2022-10-10 10:54:29,736 P51014 INFO Evaluating test data.
+2022-10-10 10:55:12,153 P51014 INFO Finish inference. [42.42s]
+2022-10-10 10:55:17,325 P51014 INFO Calculating acc sum.
+2022-10-10 10:55:17,508 P51014 INFO Finish generating store_df.
+2022-10-10 10:55:17,738 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 10:55:17,803 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 10:55:17,870 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 10:55:17,932 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top4-acc': '0.970'}
+2022-10-10 10:55:17,996 P51014 INFO {'f1': '0.074', 'rc': '0.999', 'pc': '0.038', 'top5-acc': '0.970'}
+2022-10-10 10:55:18,059 P51014 INFO {'f1': '0.246', 'rc': '0.807', 'pc': '0.145', 'top6-acc': '0.970'}
+2022-10-10 10:55:18,120 P51014 INFO {'f1': '0.738', 'rc': '0.694', 'pc': '0.788', 'top7-acc': '0.970'}
+2022-10-10 10:55:18,177 P51014 INFO {'f1': '0.556', 'rc': '0.436', 'pc': '0.766', 'top8-acc': '0.970'}
+2022-10-10 10:55:18,234 P51014 INFO {'f1': '0.476', 'rc': '0.354', 'pc': '0.727', 'top9-acc': '0.970'}
+2022-10-10 10:55:18,287 P51014 INFO {'f1': '0.403', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 10:55:18,287 P51014 INFO Finish counting [4.74s]
+2022-10-10 11:06:21,497 P51014 INFO Epoch 84/100, training loss: 1.08867 [662.78s]
+2022-10-10 11:06:21,499 P51014 INFO Evaluating test data.
+2022-10-10 11:07:02,695 P51014 INFO Finish inference. [41.20s]
+2022-10-10 11:07:07,786 P51014 INFO Calculating acc sum.
+2022-10-10 11:07:07,960 P51014 INFO Finish generating store_df.
+2022-10-10 11:07:08,184 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 11:07:08,259 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 11:07:08,336 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 11:07:08,411 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 11:07:08,491 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 11:07:08,562 P51014 INFO {'f1': '0.206', 'rc': '0.663', 'pc': '0.122', 'top6-acc': '0.970'}
+2022-10-10 11:07:08,627 P51014 INFO {'f1': '0.708', 'rc': '0.631', 'pc': '0.808', 'top7-acc': '0.970'}
+2022-10-10 11:07:08,687 P51014 INFO {'f1': '0.713', 'rc': '0.628', 'pc': '0.825', 'top8-acc': '0.970'}
+2022-10-10 11:07:08,750 P51014 INFO {'f1': '0.554', 'rc': '0.434', 'pc': '0.766', 'top9-acc': '0.970'}
+2022-10-10 11:07:08,812 P51014 INFO {'f1': '0.404', 'rc': '0.286', 'pc': '0.684', 'top10-acc': '0.970'}
+2022-10-10 11:07:08,812 P51014 INFO Finish counting [4.75s]
+2022-10-10 11:18:17,287 P51014 INFO Epoch 85/100, training loss: 1.05477 [668.03s]
+2022-10-10 11:18:17,289 P51014 INFO Evaluating test data.
+2022-10-10 11:18:58,338 P51014 INFO Finish inference. [41.05s]
+2022-10-10 11:19:03,582 P51014 INFO Calculating acc sum.
+2022-10-10 11:19:03,756 P51014 INFO Finish generating store_df.
+2022-10-10 11:19:04,013 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 11:19:04,085 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 11:19:04,164 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 11:19:04,237 P51014 INFO {'f1': '0.106', 'rc': '0.844', 'pc': '0.057', 'top4-acc': '0.970'}
+2022-10-10 11:19:04,313 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 11:19:04,385 P51014 INFO {'f1': '0.233', 'rc': '0.765', 'pc': '0.137', 'top6-acc': '0.970'}
+2022-10-10 11:19:04,452 P51014 INFO {'f1': '0.767', 'rc': '0.733', 'pc': '0.804', 'top7-acc': '0.970'}
+2022-10-10 11:19:04,514 P51014 INFO {'f1': '0.775', 'rc': '0.730', 'pc': '0.825', 'top8-acc': '0.970'}
+2022-10-10 11:19:04,569 P51014 INFO {'f1': '0.732', 'rc': '0.650', 'pc': '0.837', 'top9-acc': '0.970'}
+2022-10-10 11:19:04,626 P51014 INFO {'f1': '0.681', 'rc': '0.582', 'pc': '0.823', 'top10-acc': '0.970'}
+2022-10-10 11:19:04,626 P51014 INFO Finish counting [4.92s]
+2022-10-10 11:28:20,573 P51014 INFO Epoch 86/100, training loss: 1.02627 [555.49s]
+2022-10-10 11:28:20,575 P51014 INFO Evaluating test data.
+2022-10-10 11:28:50,714 P51014 INFO Finish inference. [30.14s]
+2022-10-10 11:28:54,910 P51014 INFO Calculating acc sum.
+2022-10-10 11:28:55,024 P51014 INFO Finish generating store_df.
+2022-10-10 11:28:55,178 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 11:28:55,244 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.049', 'top2-acc': '0.970'}
+2022-10-10 11:28:55,303 P51014 INFO {'f1': '0.084', 'rc': '0.644', 'pc': '0.045', 'top3-acc': '0.970'}
+2022-10-10 11:28:55,365 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 11:28:55,426 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 11:28:55,482 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 11:28:55,527 P51014 INFO {'f1': '0.628', 'rc': '0.532', 'pc': '0.765', 'top7-acc': '0.970'}
+2022-10-10 11:28:55,573 P51014 INFO {'f1': '0.579', 'rc': '0.469', 'pc': '0.758', 'top8-acc': '0.970'}
+2022-10-10 11:28:55,620 P51014 INFO {'f1': '0.485', 'rc': '0.368', 'pc': '0.711', 'top9-acc': '0.970'}
+2022-10-10 11:28:55,666 P51014 INFO {'f1': '0.485', 'rc': '0.368', 'pc': '0.711', 'top10-acc': '0.970'}
+2022-10-10 11:28:55,666 P51014 INFO Finish counting [3.87s]
+2022-10-10 11:36:56,649 P51014 INFO Epoch 87/100, training loss: 1.03739 [480.66s]
+2022-10-10 11:36:56,650 P51014 INFO Evaluating test data.
+2022-10-10 11:37:36,855 P51014 INFO Finish inference. [40.20s]
+2022-10-10 11:37:41,062 P51014 INFO Calculating acc sum.
+2022-10-10 11:37:41,174 P51014 INFO Finish generating store_df.
+2022-10-10 11:37:41,315 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 11:37:41,359 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top2-acc': '0.970'}
+2022-10-10 11:37:41,417 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 11:37:41,477 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 11:37:41,536 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 11:37:41,589 P51014 INFO {'f1': '0.230', 'rc': '0.759', 'pc': '0.136', 'top6-acc': '0.970'}
+2022-10-10 11:37:41,634 P51014 INFO {'f1': '0.721', 'rc': '0.665', 'pc': '0.788', 'top7-acc': '0.970'}
+2022-10-10 11:37:41,680 P51014 INFO {'f1': '0.740', 'rc': '0.664', 'pc': '0.834', 'top8-acc': '0.970'}
+2022-10-10 11:37:41,725 P51014 INFO {'f1': '0.738', 'rc': '0.662', 'pc': '0.833', 'top9-acc': '0.970'}
+2022-10-10 11:37:41,770 P51014 INFO {'f1': '0.679', 'rc': '0.582', 'pc': '0.815', 'top10-acc': '0.970'}
+2022-10-10 11:37:41,770 P51014 INFO Finish counting [3.83s]
+2022-10-10 11:46:01,671 P51014 INFO Epoch 88/100, training loss: 1.07108 [499.54s]
+2022-10-10 11:46:01,674 P51014 INFO Evaluating test data.
+2022-10-10 11:46:32,127 P51014 INFO Finish inference. [30.45s]
+2022-10-10 11:46:36,371 P51014 INFO Calculating acc sum.
+2022-10-10 11:46:36,485 P51014 INFO Finish generating store_df.
+2022-10-10 11:46:36,636 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 11:46:36,688 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 11:46:36,742 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top3-acc': '0.970'}
+2022-10-10 11:46:36,796 P51014 INFO {'f1': '0.055', 'rc': '0.806', 'pc': '0.029', 'top4-acc': '0.970'}
+2022-10-10 11:46:36,854 P51014 INFO {'f1': '0.093', 'rc': '0.631', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 11:46:36,909 P51014 INFO {'f1': '0.179', 'rc': '0.565', 'pc': '0.107', 'top6-acc': '0.970'}
+2022-10-10 11:46:36,955 P51014 INFO {'f1': '0.623', 'rc': '0.532', 'pc': '0.751', 'top7-acc': '0.970'}
+2022-10-10 11:46:37,003 P51014 INFO {'f1': '0.539', 'rc': '0.430', 'pc': '0.721', 'top8-acc': '0.970'}
+2022-10-10 11:46:37,049 P51014 INFO {'f1': '0.399', 'rc': '0.286', 'pc': '0.657', 'top9-acc': '0.970'}
+2022-10-10 11:46:37,096 P51014 INFO {'f1': '0.376', 'rc': '0.266', 'pc': '0.641', 'top10-acc': '0.970'}
+2022-10-10 11:46:37,096 P51014 INFO Finish counting [3.87s]
+2022-10-10 11:54:43,377 P51014 INFO Epoch 89/100, training loss: 1.05016 [485.98s]
+2022-10-10 11:54:43,379 P51014 INFO Evaluating test data.
+2022-10-10 11:55:13,573 P51014 INFO Finish inference. [30.19s]
+2022-10-10 11:55:17,812 P51014 INFO Calculating acc sum.
+2022-10-10 11:55:17,926 P51014 INFO Finish generating store_df.
+2022-10-10 11:55:18,092 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 11:55:18,156 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 11:55:18,218 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 11:55:18,277 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 11:55:18,335 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 11:55:18,388 P51014 INFO {'f1': '0.207', 'rc': '0.663', 'pc': '0.123', 'top6-acc': '0.970'}
+2022-10-10 11:55:18,433 P51014 INFO {'f1': '0.699', 'rc': '0.630', 'pc': '0.785', 'top7-acc': '0.970'}
+2022-10-10 11:55:18,480 P51014 INFO {'f1': '0.660', 'rc': '0.568', 'pc': '0.787', 'top8-acc': '0.970'}
+2022-10-10 11:55:18,526 P51014 INFO {'f1': '0.605', 'rc': '0.488', 'pc': '0.795', 'top9-acc': '0.970'}
+2022-10-10 11:55:18,570 P51014 INFO {'f1': '0.407', 'rc': '0.287', 'pc': '0.696', 'top10-acc': '0.970'}
+2022-10-10 11:55:18,571 P51014 INFO Finish counting [3.91s]
+2022-10-10 12:03:23,661 P51014 INFO Epoch 90/100, training loss: 1.10871 [484.75s]
+2022-10-10 12:03:23,663 P51014 INFO Evaluating test data.
+2022-10-10 12:03:53,519 P51014 INFO Finish inference. [29.86s]
+2022-10-10 12:03:57,745 P51014 INFO Calculating acc sum.
+2022-10-10 12:03:57,857 P51014 INFO Finish generating store_df.
+2022-10-10 12:03:58,011 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 12:03:58,062 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 12:03:58,117 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 12:03:58,171 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top4-acc': '0.970'}
+2022-10-10 12:03:58,228 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 12:03:58,281 P51014 INFO {'f1': '0.181', 'rc': '0.571', 'pc': '0.108', 'top6-acc': '0.970'}
+2022-10-10 12:03:58,325 P51014 INFO {'f1': '0.551', 'rc': '0.437', 'pc': '0.744', 'top7-acc': '0.970'}
+2022-10-10 12:03:58,369 P51014 INFO {'f1': '0.475', 'rc': '0.357', 'pc': '0.713', 'top8-acc': '0.970'}
+2022-10-10 12:03:58,415 P51014 INFO {'f1': '0.480', 'rc': '0.356', 'pc': '0.737', 'top9-acc': '0.970'}
+2022-10-10 12:03:58,460 P51014 INFO {'f1': '0.407', 'rc': '0.287', 'pc': '0.697', 'top10-acc': '0.970'}
+2022-10-10 12:03:58,460 P51014 INFO Finish counting [3.86s]
+2022-10-10 12:12:03,376 P51014 INFO Epoch 91/100, training loss: 1.04023 [484.59s]
+2022-10-10 12:12:03,378 P51014 INFO Evaluating test data.
+2022-10-10 12:12:34,915 P51014 INFO Finish inference. [31.54s]
+2022-10-10 12:12:39,139 P51014 INFO Calculating acc sum.
+2022-10-10 12:12:39,259 P51014 INFO Finish generating store_df.
+2022-10-10 12:12:39,413 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 12:12:39,460 P51014 INFO {'f1': '0.059', 'rc': '1.000', 'pc': '0.030', 'top2-acc': '0.970'}
+2022-10-10 12:12:39,514 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 12:12:39,574 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 12:12:39,632 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 12:12:39,691 P51014 INFO {'f1': '0.091', 'rc': '0.518', 'pc': '0.050', 'top6-acc': '0.970'}
+2022-10-10 12:12:39,736 P51014 INFO {'f1': '0.473', 'rc': '0.357', 'pc': '0.703', 'top7-acc': '0.970'}
+2022-10-10 12:12:39,782 P51014 INFO {'f1': '0.413', 'rc': '0.295', 'pc': '0.690', 'top8-acc': '0.970'}
+2022-10-10 12:12:39,829 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.684', 'top9-acc': '0.970'}
+2022-10-10 12:12:39,874 P51014 INFO {'f1': '0.405', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 12:12:39,874 P51014 INFO Finish counting [3.88s]
+2022-10-10 12:21:10,923 P51014 INFO Epoch 92/100, training loss: 1.08399 [510.72s]
+2022-10-10 12:21:10,925 P51014 INFO Evaluating test data.
+2022-10-10 12:21:42,212 P51014 INFO Finish inference. [31.29s]
+2022-10-10 12:21:46,446 P51014 INFO Calculating acc sum.
+2022-10-10 12:21:46,569 P51014 INFO Finish generating store_df.
+2022-10-10 12:21:46,734 P51014 INFO {'f1': '0.058', 'rc': '1.000', 'pc': '0.030', 'top1-acc': '0.970'}
+2022-10-10 12:21:46,786 P51014 INFO {'f1': '0.059', 'rc': '1.000', 'pc': '0.030', 'top2-acc': '0.970'}
+2022-10-10 12:21:46,839 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 12:21:46,898 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 12:21:46,959 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 12:21:47,011 P51014 INFO {'f1': '0.234', 'rc': '0.765', 'pc': '0.138', 'top6-acc': '0.970'}
+2022-10-10 12:21:47,058 P51014 INFO {'f1': '0.647', 'rc': '0.563', 'pc': '0.759', 'top7-acc': '0.970'}
+2022-10-10 12:21:47,104 P51014 INFO {'f1': '0.664', 'rc': '0.562', 'pc': '0.810', 'top8-acc': '0.970'}
+2022-10-10 12:21:47,149 P51014 INFO {'f1': '0.664', 'rc': '0.562', 'pc': '0.810', 'top9-acc': '0.970'}
+2022-10-10 12:21:47,193 P51014 INFO {'f1': '0.600', 'rc': '0.482', 'pc': '0.794', 'top10-acc': '0.970'}
+2022-10-10 12:21:47,194 P51014 INFO Finish counting [3.87s]
+2022-10-10 12:30:14,408 P51014 INFO Epoch 93/100, training loss: 1.08664 [506.90s]
+2022-10-10 12:30:14,410 P51014 INFO Evaluating test data.
+2022-10-10 12:30:46,513 P51014 INFO Finish inference. [32.10s]
+2022-10-10 12:30:50,892 P51014 INFO Calculating acc sum.
+2022-10-10 12:30:51,014 P51014 INFO Finish generating store_df.
+2022-10-10 12:30:51,202 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 12:30:51,267 P51014 INFO {'f1': '0.093', 'rc': '0.806', 'pc': '0.049', 'top2-acc': '0.970'}
+2022-10-10 12:30:51,328 P51014 INFO {'f1': '0.077', 'rc': '0.657', 'pc': '0.041', 'top3-acc': '0.970'}
+2022-10-10 12:30:51,388 P51014 INFO {'f1': '0.083', 'rc': '0.650', 'pc': '0.044', 'top4-acc': '0.970'}
+2022-10-10 12:30:51,448 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 12:30:51,500 P51014 INFO {'f1': '0.167', 'rc': '0.522', 'pc': '0.099', 'top6-acc': '0.970'}
+2022-10-10 12:30:51,544 P51014 INFO {'f1': '0.396', 'rc': '0.289', 'pc': '0.629', 'top7-acc': '0.970'}
+2022-10-10 12:30:51,588 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top8-acc': '0.970'}
+2022-10-10 12:30:51,632 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 12:30:51,677 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 12:30:51,677 P51014 INFO Finish counting [4.00s]
+2022-10-10 12:39:25,560 P51014 INFO Epoch 94/100, training loss: 1.13370 [513.49s]
+2022-10-10 12:39:25,562 P51014 INFO Evaluating test data.
+2022-10-10 12:39:56,842 P51014 INFO Finish inference. [31.28s]
+2022-10-10 12:40:01,062 P51014 INFO Calculating acc sum.
+2022-10-10 12:40:01,182 P51014 INFO Finish generating store_df.
+2022-10-10 12:40:01,347 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 12:40:01,410 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 12:40:01,470 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 12:40:01,529 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 12:40:01,589 P51014 INFO {'f1': '0.093', 'rc': '0.631', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 12:40:01,643 P51014 INFO {'f1': '0.167', 'rc': '0.522', 'pc': '0.099', 'top6-acc': '0.970'}
+2022-10-10 12:40:01,688 P51014 INFO {'f1': '0.479', 'rc': '0.369', 'pc': '0.684', 'top7-acc': '0.970'}
+2022-10-10 12:40:01,732 P51014 INFO {'f1': '0.485', 'rc': '0.368', 'pc': '0.711', 'top8-acc': '0.970'}
+2022-10-10 12:40:01,779 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.669', 'top9-acc': '0.970'}
+2022-10-10 12:40:01,825 P51014 INFO {'f1': '0.402', 'rc': '0.287', 'pc': '0.669', 'top10-acc': '0.970'}
+2022-10-10 12:40:01,825 P51014 INFO Finish counting [3.88s]
+2022-10-10 12:48:22,944 P51014 INFO Epoch 95/100, training loss: 1.13995 [500.71s]
+2022-10-10 12:48:22,945 P51014 INFO Evaluating test data.
+2022-10-10 12:48:53,225 P51014 INFO Finish inference. [30.28s]
+2022-10-10 12:48:57,458 P51014 INFO Calculating acc sum.
+2022-10-10 12:48:57,577 P51014 INFO Finish generating store_df.
+2022-10-10 12:48:57,739 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 12:48:57,791 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 12:48:57,849 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 12:48:57,907 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 12:48:57,963 P51014 INFO {'f1': '0.120', 'rc': '0.829', 'pc': '0.065', 'top5-acc': '0.970'}
+2022-10-10 12:48:58,022 P51014 INFO {'f1': '0.140', 'rc': '0.813', 'pc': '0.077', 'top6-acc': '0.970'}
+2022-10-10 12:48:58,070 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 12:48:58,115 P51014 INFO {'f1': '0.579', 'rc': '0.469', 'pc': '0.759', 'top8-acc': '0.970'}
+2022-10-10 12:48:58,163 P51014 INFO {'f1': '0.505', 'rc': '0.388', 'pc': '0.723', 'top9-acc': '0.970'}
+2022-10-10 12:48:58,209 P51014 INFO {'f1': '0.399', 'rc': '0.286', 'pc': '0.658', 'top10-acc': '0.970'}
+2022-10-10 12:48:58,209 P51014 INFO Finish counting [3.90s]
+2022-10-10 12:57:08,120 P51014 INFO Epoch 96/100, training loss: 1.14952 [489.59s]
+2022-10-10 12:57:08,121 P51014 INFO Evaluating test data.
+2022-10-10 12:57:49,190 P51014 INFO Finish inference. [41.07s]
+2022-10-10 12:57:53,432 P51014 INFO Calculating acc sum.
+2022-10-10 12:57:53,546 P51014 INFO Finish generating store_df.
+2022-10-10 12:57:53,711 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 12:57:53,766 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top2-acc': '0.970'}
+2022-10-10 12:57:53,822 P51014 INFO {'f1': '0.068', 'rc': '1.000', 'pc': '0.035', 'top3-acc': '0.970'}
+2022-10-10 12:57:53,885 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 12:57:53,943 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 12:57:53,995 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 12:57:54,041 P51014 INFO {'f1': '0.477', 'rc': '0.369', 'pc': '0.674', 'top7-acc': '0.970'}
+2022-10-10 12:57:54,086 P51014 INFO {'f1': '0.486', 'rc': '0.369', 'pc': '0.711', 'top8-acc': '0.970'}
+2022-10-10 12:57:54,131 P51014 INFO {'f1': '0.488', 'rc': '0.369', 'pc': '0.721', 'top9-acc': '0.970'}
+2022-10-10 12:57:54,175 P51014 INFO {'f1': '0.403', 'rc': '0.288', 'pc': '0.669', 'top10-acc': '0.970'}
+2022-10-10 12:57:54,175 P51014 INFO Finish counting [3.88s]
+2022-10-10 13:06:29,171 P51014 INFO Epoch 97/100, training loss: 1.13563 [514.67s]
+2022-10-10 13:06:29,173 P51014 INFO Evaluating test data.
+2022-10-10 13:06:59,724 P51014 INFO Finish inference. [30.55s]
+2022-10-10 13:07:03,961 P51014 INFO Calculating acc sum.
+2022-10-10 13:07:04,082 P51014 INFO Finish generating store_df.
+2022-10-10 13:07:04,239 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 13:07:04,297 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 13:07:04,355 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 13:07:04,417 P51014 INFO {'f1': '0.109', 'rc': '0.838', 'pc': '0.058', 'top4-acc': '0.970'}
+2022-10-10 13:07:04,478 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 13:07:04,536 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 13:07:04,581 P51014 INFO {'f1': '0.540', 'rc': '0.430', 'pc': '0.725', 'top7-acc': '0.970'}
+2022-10-10 13:07:04,626 P51014 INFO {'f1': '0.403', 'rc': '0.288', 'pc': '0.669', 'top8-acc': '0.970'}
+2022-10-10 13:07:04,671 P51014 INFO {'f1': '0.401', 'rc': '0.286', 'pc': '0.668', 'top9-acc': '0.970'}
+2022-10-10 13:07:04,716 P51014 INFO {'f1': '0.401', 'rc': '0.286', 'pc': '0.668', 'top10-acc': '0.970'}
+2022-10-10 13:07:04,716 P51014 INFO Finish counting [3.89s]
+2022-10-10 13:26:14,060 P51014 INFO Epoch 98/100, training loss: 1.06630 [1148.99s]
+2022-10-10 13:26:14,062 P51014 INFO Evaluating test data.
+2022-10-10 13:26:46,432 P51014 INFO Finish inference. [32.37s]
+2022-10-10 13:26:50,679 P51014 INFO Calculating acc sum.
+2022-10-10 13:26:50,801 P51014 INFO Finish generating store_df.
+2022-10-10 13:26:50,964 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 13:26:51,025 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 13:26:51,087 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 13:26:51,147 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 13:26:51,208 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 13:26:51,263 P51014 INFO {'f1': '0.151', 'rc': '0.469', 'pc': '0.090', 'top6-acc': '0.970'}
+2022-10-10 13:26:51,310 P51014 INFO {'f1': '0.467', 'rc': '0.357', 'pc': '0.675', 'top7-acc': '0.970'}
+2022-10-10 13:26:51,355 P51014 INFO {'f1': '0.413', 'rc': '0.295', 'pc': '0.690', 'top8-acc': '0.970'}
+2022-10-10 13:26:51,400 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top9-acc': '0.970'}
+2022-10-10 13:26:51,444 P51014 INFO {'f1': '0.406', 'rc': '0.288', 'pc': '0.685', 'top10-acc': '0.970'}
+2022-10-10 13:26:51,444 P51014 INFO Finish counting [3.91s]
+2022-10-10 13:35:30,357 P51014 INFO Epoch 99/100, training loss: 1.13581 [518.58s]
+2022-10-10 13:35:30,359 P51014 INFO Evaluating test data.
+2022-10-10 13:36:02,684 P51014 INFO Finish inference. [32.32s]
+2022-10-10 13:36:06,880 P51014 INFO Calculating acc sum.
+2022-10-10 13:36:07,010 P51014 INFO Finish generating store_df.
+2022-10-10 13:36:07,248 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 13:36:07,313 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 13:36:07,372 P51014 INFO {'f1': '0.108', 'rc': '0.838', 'pc': '0.058', 'top3-acc': '0.970'}
+2022-10-10 13:36:07,434 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 13:36:07,491 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 13:36:07,545 P51014 INFO {'f1': '0.127', 'rc': '0.389', 'pc': '0.076', 'top6-acc': '0.970'}
+2022-10-10 13:36:07,590 P51014 INFO {'f1': '0.459', 'rc': '0.349', 'pc': '0.670', 'top7-acc': '0.970'}
+2022-10-10 13:36:07,637 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.668', 'top8-acc': '0.970'}
+2022-10-10 13:36:07,681 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.668', 'top9-acc': '0.970'}
+2022-10-10 13:36:07,727 P51014 INFO {'f1': '0.402', 'rc': '0.288', 'pc': '0.669', 'top10-acc': '0.970'}
+2022-10-10 13:36:07,727 P51014 INFO Finish counting [3.94s]
+2022-10-10 13:44:34,698 P51014 INFO Epoch 100/100, training loss: 1.03406 [506.58s]
+2022-10-10 13:44:34,698 P51014 INFO Evaluating test data.
+2022-10-10 13:45:06,157 P51014 INFO Finish inference. [31.46s]
+2022-10-10 13:45:10,286 P51014 INFO Calculating acc sum.
+2022-10-10 13:45:10,405 P51014 INFO Finish generating store_df.
+2022-10-10 13:45:10,553 P51014 INFO {'f1': '0.067', 'rc': '1.000', 'pc': '0.035', 'top1-acc': '0.970'}
+2022-10-10 13:45:10,612 P51014 INFO {'f1': '0.114', 'rc': '1.000', 'pc': '0.060', 'top2-acc': '0.970'}
+2022-10-10 13:45:10,677 P51014 INFO {'f1': '0.098', 'rc': '0.851', 'pc': '0.052', 'top3-acc': '0.970'}
+2022-10-10 13:45:10,740 P51014 INFO {'f1': '0.085', 'rc': '0.644', 'pc': '0.045', 'top4-acc': '0.970'}
+2022-10-10 13:45:10,799 P51014 INFO {'f1': '0.093', 'rc': '0.635', 'pc': '0.050', 'top5-acc': '0.970'}
+2022-10-10 13:45:10,855 P51014 INFO {'f1': '0.108', 'rc': '0.619', 'pc': '0.059', 'top6-acc': '0.970'}
+2022-10-10 13:45:10,900 P51014 INFO {'f1': '0.638', 'rc': '0.539', 'pc': '0.782', 'top7-acc': '0.970'}
+2022-10-10 13:45:10,945 P51014 INFO {'f1': '0.509', 'rc': '0.390', 'pc': '0.733', 'top8-acc': '0.970'}
+2022-10-10 13:45:10,989 P51014 INFO {'f1': '0.403', 'rc': '0.288', 'pc': '0.670', 'top9-acc': '0.970'}
+2022-10-10 13:45:11,033 P51014 INFO {'f1': '0.408', 'rc': '0.288', 'pc': '0.697', 'top10-acc': '0.970'}
+2022-10-10 13:45:11,034 P51014 INFO Finish counting [3.81s]
+2022-10-10 13:45:11,379 P51014 INFO Loading model from ./experiment_records/5a9ba7ed/model.ckpt
