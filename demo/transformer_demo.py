@@ -24,7 +24,7 @@ parser.add_argument("--nhead", default=2, type=int)
 ##### Dataset params
 parser.add_argument("--dataset", default="HDFS", type=str)
 parser.add_argument(
-    "--data_dir", default="../data/processed/HDFS_100k/hdfs_0.0_tar", type=str
+    "--data_dir", default="../data/processed/HDFS/hdfs_0.0_tar", type=str
 )
 parser.add_argument("--window_size", default=10, type=int)
 parser.add_argument("--stride", default=1, type=int)
@@ -93,8 +93,6 @@ if __name__ == "__main__":
     train_loss_array = metrices['train']
     eval_results_array = metrices['test']
     best_results_array = metrices['best']
-    # draw figures
-    # params["batch_size"]
 
     # show figures
     fig = plt.figure()
